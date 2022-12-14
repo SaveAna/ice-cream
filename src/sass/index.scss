@@ -1,6 +1,10 @@
 @import './utils/variables';
 @import './base/base';
 
+/* header */
+@import './components/header';
+@import './components/menu';
+
 // contacts
 
 @import './components/contacts';
