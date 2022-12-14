@@ -37,7 +37,6 @@
 .products__info {
   font-size: 14px;
   line-height: calc(25 / 14);
-  text-align: center;
   letter-spacing: 0.04em;
 }
 
@@ -63,12 +62,10 @@
 
 .products__circle {
   position: absolute;
-  background-color: inherit;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   top: -100;
-  left: 80;
 }
 
 .products__circle---green {
