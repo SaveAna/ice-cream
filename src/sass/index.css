@@ -224,4 +224,134 @@ button {
 .button__item {
   margin-left: auto;
   margin-right: auto;
+}
+
+.section__products {
+  background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.products__title {
+  font-family: "Seymour One", sans-serif;
+  font-size: 30px;
+  line-height: 1.2666666667;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 148px;
+}
+
+.products__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.products__info {
+  font-size: 14px;
+  line-height: 1.7857142857;
+  letter-spacing: 0.04em;
+}
+
+.products__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 280px;
+  height: 420px;
+  padding: 123px 40px 16px 40px;
+  border-radius: 24px;
+  margin-bottom: 168px;
+  background-color: #aec6a5;
+}
+.products__item:nth-child(2) {
+  background-color: #efd478;
+}
+.products__item:last-child {
+  background-color: #d6936d;
+  margin-bottom: 0;
+}
+
+.products__circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -100;
+}
+
+.products__circle---green {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+.products__circle---green::before {
+  content: "";
+  position: absolute;
+  top: -11;
+  left: 0;
+  background-image: url(../images/products/tablet-mobile/1/1_200.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.products__circle--yellow {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.products__circle--yellow::before {
+  content: "";
+  position: absolute;
+  top: -11;
+  left: 0;
+  background-image: url(../images/products/tablet-mobile/2/2_200.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.products__circle--coral {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+.products__circle--coral::before {
+  content: "";
+  position: absolute;
+  top: -11;
+  left: 0;
+  background-image: url(../images/products/tablet-mobile/3/3_200.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.products__btn {
+  border: none;
+  background-color: inherit;
+  margin-top: auto;
 }/*# sourceMappingURL=index.css.map */
