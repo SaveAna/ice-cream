@@ -111,7 +111,7 @@
   background: getColor(accent);
   border-color: transparent;
 
-  padding: 12px 40px;
+  padding: 10px 38px;
 
   font-style: normal;
   font-weight: 600;
@@ -119,12 +119,19 @@
   line-height: calc(18 / 14);
 
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
+  transition: 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: getColor(active-green);
+  }
 }
 
 .button__franchise {
-  padding: 12px 55px;
+  padding: 10px 53px;
   background-color: transparent;
   border: getBorder(button-default);
 
@@ -133,10 +140,18 @@
   line-height: calc(18 / 14);
 
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
 
   color: #000000;
+
+  transition: 250ms linear;
+
+  &:hover,
+  &:focus {
+    border-color: getColor(active-green);
+  }
 }
 
 .button {
