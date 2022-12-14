@@ -75,4 +75,153 @@ button {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__item {
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px;
+}
+
+.contacts__agency {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #f8d24e;
+  border-radius: 4px;
+  padding: 4px 22px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contacts__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8333333333;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.contacts__address {
+  position: relative;
+  margin-bottom: 48px;
+}
+.contacts__address::after {
+  content: "";
+  display: inline-block;
+  left: 0;
+  bottom: -24px;
+  position: absolute;
+  width: 216px;
+  height: 0px;
+  border: 1px solid #e1e1e1;
+}
+
+.address__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8333333333;
+  letter-spacing: 0.04em;
+  color: #d6936d;
+  font-style: normal;
+  flex-basis: 216px;
+}
+
+.address__link--width {
+  max-width: 190px;
+}
+
+.work-time__day,
+.work-time__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8333333333;
+}
+
+.work-time__time {
+  color: #ababab;
+  text-transform: uppercase;
+}
+
+.work-time__list {
+  position: relative;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.work-time__list::after {
+  content: "";
+  display: inline-block;
+  left: 0;
+  bottom: -24px;
+  position: absolute;
+  width: 216px;
+  height: 0px;
+  border: 1px solid #e1e1e1;
+}
+
+.communication__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.communication__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5833333333;
+}
+
+.button__locations {
+  background: #f8d24e;
+  border-color: transparent;
+  padding: 12px 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.button__franchise {
+  padding: 12px 55px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.button__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button__item {
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=index.css.map */
