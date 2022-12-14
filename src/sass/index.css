@@ -77,12 +77,40 @@ button {
   overflow: hidden;
 }
 
+.advanteges-list {
+  max-width: 230px;
+}
+
+.advanteges-list__tittle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2222222222;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.advanteges-list__description {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  text-align: center;
+  color: #FCFCFC;
+}
+
 .contacts__list {
   display: flex;
-  flex-direction: column;
   gap: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    flex-direction: column;
+  }
 }
 
 .contacts__item {
@@ -90,6 +118,18 @@ button {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    padding: 40px 24px;
+    flex-basis: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    padding: 40px;
+    flex-basis: 368px;
+  }
 }
 
 .contacts__agency {
@@ -104,6 +144,25 @@ button {
   display: inline-block;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .contacts__agency {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 4px 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__agency {
+    padding: 4px 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__agency--padding {
+    padding: 4px 10px;
+  }
+}
 
 .contacts__city {
   font-weight: 500;
@@ -111,6 +170,18 @@ button {
   line-height: 1.8333333333;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__city {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__city {
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .contacts__address {
@@ -124,11 +195,28 @@ button {
   bottom: -24px;
   position: absolute;
   width: 216px;
-  height: 0px;
-  border: 1px solid #e1e1e1;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .contacts__address::after {
+    bottom: -32px;
+    width: 176px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__address::after {
+    width: 288px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__address {
+    margin-bottom: 64px;
+  }
 }
 
 .address__link {
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
@@ -137,9 +225,37 @@ button {
   font-style: normal;
   flex-basis: 216px;
 }
+.address__link:hover, .address__link:focus {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+@media screen and (min-width: 768px) {
+  .address__link {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__link {
+    font-size: 16px;
+    line-height: 1.8125;
+  }
+}
 
-.address__link--width {
-  max-width: 190px;
+@media screen and (max-width: 767px) {
+  .address__link--width {
+    max-width: 190px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address__link--width {
+    max-width: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__link--width {
+    max-width: 262px;
+  }
 }
 
 .work-time__day,
@@ -147,6 +263,20 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8333333333;
+}
+@media screen and (min-width: 768px) {
+  .work-time__day,
+.work-time__time {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-time__day,
+.work-time__time {
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .work-time__time {
@@ -168,8 +298,24 @@ button {
   bottom: -24px;
   position: absolute;
   width: 216px;
-  height: 0px;
-  border: 1px solid #e1e1e1;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .work-time__list::after {
+    bottom: -32px;
+    width: 176px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-time__list::after {
+    width: 288px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-time__list {
+    margin-bottom: 64px;
+  }
 }
 
 .communication__list {
@@ -183,31 +329,53 @@ button {
   font-size: 12px;
   line-height: 1.5833333333;
 }
+@media screen and (min-width: 768px) {
+  .communication__link {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .communication__link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
 
 .button__locations {
-  background: #f8d24e;
+  background-color: #f8d24e;
   border-color: transparent;
-  padding: 12px 40px;
+  padding: 10px 38px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2857142857;
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
+  transition: 250ms linear;
+}
+.button__locations:hover, .button__locations:focus {
+  background-color: #0a8817;
 }
 
 .button__franchise {
-  padding: 12px 55px;
+  padding: 10px 53px;
   background-color: transparent;
   border: 2px solid #f8d24e;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2857142857;
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
   color: #000000;
+  transition: 250ms linear;
+}
+.button__franchise:hover, .button__franchise:focus {
+  border-color: #0a8817;
 }
 
 .button {
@@ -217,13 +385,27 @@ button {
 .button__list {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  .button__list {
+    margin-top: 40px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__list {
+    margin-top: 60px;
+  }
+}
 
-.button__item {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .button__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section__products {

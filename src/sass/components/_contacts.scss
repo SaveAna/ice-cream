@@ -1,10 +1,17 @@
+// .contacts {
+//   position: relative;
+//   top: -360px;
+// }
+
 .contacts__list {
   display: flex;
-  flex-direction: column;
   gap: 16px;
-
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .contacts__item {
@@ -12,6 +19,15 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+    flex-basis: 224px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+    flex-basis: 368px;
+  }
 }
 
 .contacts__agency {
@@ -26,6 +42,23 @@
   padding: 4px 22px;
   display: inline-block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    padding: 4px 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
+}
+
+.contacts__agency--padding {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 4px 10px;
+  }
 }
 
 .contacts__city {
@@ -34,6 +67,16 @@
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .contacts__address {
@@ -47,11 +90,26 @@
     bottom: -24px;
     position: absolute;
     width: 216px;
-    height: 0px;
-    border: getBorder(footer);
+    height: 1px;
+    background-color: #e1e1e1;
+
+    @media screen and (min-width: 768px) {
+      bottom: -32px;
+      width: 176px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 288px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
   }
 }
+
 .address__link {
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -59,10 +117,35 @@
   color: getColor('coral');
   font-style: normal;
   flex-basis: 216px;
+
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 }
 
 .address__link--width {
-  max-width: 190px;
+  @media screen and (max-width: 767px) {
+    max-width: 190px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 160px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 262px;
+  }
 }
 
 .work-time__day,
@@ -70,7 +153,17 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
+
 .work-time__time {
   color: getColor('grey');
   text-transform: uppercase;
@@ -90,8 +183,21 @@
     bottom: -24px;
     position: absolute;
     width: 216px;
-    height: 0px;
-    border: getBorder(footer);
+    height: 1px;
+    background-color: #e1e1e1;
+
+    @media screen and (min-width: 768px) {
+      bottom: -32px;
+      width: 176px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 288px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
   }
 }
 
@@ -105,13 +211,23 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
 }
 
 .button__locations {
-  background: getColor(accent);
+  background-color: getColor(accent);
   border-color: transparent;
 
-  padding: 12px 40px;
+  padding: 10px 38px;
 
   font-style: normal;
   font-weight: 600;
@@ -119,12 +235,19 @@
   line-height: calc(18 / 14);
 
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
+  transition: 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: getColor(active-green);
+  }
 }
 
 .button__franchise {
-  padding: 12px 55px;
+  padding: 10px 53px;
   background-color: transparent;
   border: getBorder(button-default);
 
@@ -133,10 +256,18 @@
   line-height: calc(18 / 14);
 
   display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
 
   color: #000000;
+
+  transition: 250ms linear;
+
+  &:hover,
+  &:focus {
+    border-color: getColor(active-green);
+  }
 }
 
 .button {
@@ -146,11 +277,22 @@
 .button__list {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
 
 .button__item {
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
