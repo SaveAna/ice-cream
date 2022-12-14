@@ -1,7 +1,7 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #131313;
-  background-color: #84a178;
+  font-family: 'Montserrat', sans-serif;
+  color: getColor(primary-dark);
+  background-color: getBgColor(main-green);
 }
 
 h1,
@@ -29,7 +29,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #131313;
+  color: getColor(primary-dark);
 }
 
 button {
@@ -40,23 +40,19 @@ button {
 .container {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 320px) {
-  .container {
+
+  @media screen and (min-width: 320px) {
     width: 320px;
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
+
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
@@ -70,9 +66,9 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}/*# sourceMappingURL=index.css.map */
+}
