@@ -15,3 +15,26 @@
         background-color: transparent;
         border: none;
 }
+
+.header__button {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(17 / 14);
+        padding: 12px 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #F8D24E;
+        width: 152px;
+        height: 42px;
+        border-radius: 10px;
+        border: transparent;
+
+        @media screen and (min-width:768px) {
+            display: block;
+        }
+}
+
+.is-hidden {
+    display: none;
+}
