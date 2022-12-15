@@ -1,0 +1,54 @@
+<div class="modal locations-modal" data-modal="1">
+  <svg class="modal__cross js-modal-close" width="24" height="24">
+    <use href="./images/svg/symbol-defs.svg#close-black"></use>
+  </svg>
+
+  <h2 class="modal__title">Our Locations</h2>
+  <button class="button btn-locations" type="button">Open map</button>
+</div>
+
+<div class="modal franchise-modal" data-modal="2">
+  <svg class="modal__cross js-modal-close" width="24" height="24">
+    <use href="./images/svg/symbol-defs.svg#close-black"></use>
+  </svg>
+
+  <h2 class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <ul class="franchise__form">
+    <li class="modal-form__item">
+      <label class="modal-form__label" for="name">Name</label>
+      <input class="modal-form__input" type="text" name="name" id="name" />
+    </li>
+    <li class="modal-form__item">
+      <label class="modal-form__label" for="tel">Phone</label>
+      <input class="modal-form__input" type="tel" name="tel" id="tel" />
+    </li>
+    <li class="modal-form__item">
+      <label class="modal-form__label" for="mail">Email</label>
+      <input class="modal-form__input" type="email" name="mail" id="mail" />
+    </li>
+    <li class="modal-form__item">
+      <label class="modal-form__label" for="comment">Comment</label>
+      <textarea
+        class="modal-form__textarea"
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="5"
+      ></textarea>
+    </li>
+  </ul>
+  <button class="button btn-franchise" type="submit">Submit</button>
+</div>
+
+<!-- backdrop -->
+<div class="overlay js-overlay-modal"></div>
