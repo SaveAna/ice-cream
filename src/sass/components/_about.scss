@@ -1,0 +1,122 @@
+.about__container {
+    padding-top: 61px;
+    padding-bottom: 64px;
+    
+}
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about__thumb {
+    position: relative;
+    
+    width: 279px;
+    height: 279px;
+    
+    background-color: #F8D24E;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    margin-bottom: 62px;
+}
+
+.about__cow {
+    position: absolute;
+    top: 22px;
+       
+    width: 279px;
+    
+    // border-radius: 140px;
+    }
+
+.about__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: getColor(primary-light);
+    
+    margin-bottom: 12px;
+    
+}
+
+.about__titel {
+    font-family: 'Seymour One';
+   
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: getColor(primary-light);
+
+    margin-bottom: 32px;
+    width: 200px;
+}
+
+.about__values {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.1;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: getColor(primary-light);
+
+    width: 220px;
+
+    margin-bottom: 4px;
+}
+
+.about__recipes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: getColor(primary-light);
+
+    width: 220px;
+
+    margin-bottom: 10px;
+}
+
+.about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 164px;
+    min-height: 42px;
+
+    border: getBorder(button-default);
+    
+    border-radius: 10px;
+    background: #F8D24E;
+}
+
+.about__btn:hover {
+    background-color: #0a8817;
+    color: getColor(primary-black);
+    border: getBorder(button-active);
+}
+.about__btn:focus {
+    background-color: #0a8817;
+    color: getColor(primary-white);
+    border: getBorder(button-active);
+    fill: getColor(primary-white);
+}
+
+.about__btn--text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+
+    margin-right: 4px;
+}
