@@ -30,6 +30,10 @@
   text-align: center;
   background-color: getColor(primary-light);
   transition: 0.3s all;
+
+  @media screen and (max-width: 767px) {
+    padding: 28px;
+  }
 }
 
 .modal.active,
@@ -42,6 +46,11 @@
   font-family: 'Seymour One', sans-serif;
   font-size: 20px;
   line-height: calc(28 / 20);
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: calc(24 / 16) 24px;
+  }
 }
 
 .modal__text {
@@ -49,16 +58,32 @@
   line-height: calc(22 / 16);
   margin-top: 24px;
   text-align: justify;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    margin-top: 20px;
+  }
 }
 
 .locations-modal {
   width: 568px;
   height: 458px;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 365px;
+  }
 }
 
 .franchise-modal {
   width: 568px;
   height: 668px;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 100%;
+  }
 }
 
 .modal__cross {
@@ -67,6 +92,11 @@
   right: 12px;
   fill: getColor(primary-dark);
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 //form
@@ -76,6 +106,10 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+  }
 }
 
 .modal-form__item {
@@ -88,6 +122,13 @@
   left: 66px;
   font-size: 14px;
   line-height: calc(20 / 14);
+
+  @media screen and (max-width: 767px) {
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+  }
 }
 
 .modal-form__input,
@@ -97,6 +138,21 @@
   border-radius: 10px;
   padding: 11px 16px;
   min-width: 368px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 224px;
+    padding: 8px 12px;
+  }
+}
+
+.modal-form__textarea {
+  min-width: 368px;
+  height: 84px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 224px;
+    height: 64px;
+  }
 }
 
 textarea {
@@ -115,6 +171,10 @@ textarea {
   padding: 12px 34px;
   border-color: transparent;
   margin-top: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+  }
 
   &:hover,
   &:focus {

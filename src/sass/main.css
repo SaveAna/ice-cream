@@ -386,73 +386,6 @@ button {
   }
 }
 
-
-.button__locations {
-  background-color: #f8d24e;
-  border-color: transparent;
-  padding: 10px 38px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2857142857;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  text-align: center;
-  transition: 250ms linear;
-}
-.button__locations:hover, .button__locations:focus {
-  background-color: #0a8817;
-}
-
-.button__franchise {
-  padding: 10px 53px;
-  background-color: transparent;
-  border: 2px solid #f8d24e;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2857142857;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  text-align: center;
-  color: #000000;
-  transition: 250ms linear;
-}
-.button__franchise:hover, .button__franchise:focus {
-  border-color: #0a8817;
-}
-
-.button {
-  border-radius: 10px;
-}
-
-.button__list {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 16px;
-}
-@media screen and (min-width: 768px) {
-  .button__list {
-    margin-top: 40px;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button__list {
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .button__item {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .footer {
   font-weight: 700;
 }
@@ -509,11 +442,7 @@ button {
 }
 
 .section__products {
-
-  background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
-
   background-image: url(../images/background/mobile/background_mobile_885.png);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -672,6 +601,11 @@ button {
   background-color: #fcfcfc;
   transition: 0.3s all;
 }
+@media screen and (max-width: 767px) {
+  .modal {
+    padding: 28px;
+  }
+}
 
 .modal.active,
 .overlay.active {
@@ -684,6 +618,12 @@ button {
   font-size: 20px;
   line-height: 1.4;
 }
+@media screen and (max-width: 767px) {
+  .modal__title {
+    font-size: 16px;
+    line-height: 1.5 24px;
+  }
+}
 
 .modal__text {
   font-size: 16px;
@@ -691,15 +631,34 @@ button {
   margin-top: 24px;
   text-align: justify;
 }
+@media screen and (max-width: 767px) {
+  .modal__text {
+    font-size: 14px;
+    line-height: 1.4285714286;
+    margin-top: 20px;
+  }
+}
 
 .locations-modal {
   width: 568px;
   height: 458px;
 }
+@media screen and (max-width: 767px) {
+  .locations-modal {
+    width: 280px;
+    height: 365px;
+  }
+}
 
 .franchise-modal {
   width: 568px;
   height: 668px;
+}
+@media screen and (max-width: 767px) {
+  .franchise-modal {
+    width: 280px;
+    height: 100%;
+  }
 }
 
 .modal__cross {
@@ -709,12 +668,23 @@ button {
   fill: #131313;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .modal__cross {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .franchise__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-top: 32px;
+}
+@media screen and (max-width: 767px) {
+  .franchise__form {
+    margin-top: 24px;
+  }
 }
 
 .modal-form__item {
@@ -728,6 +698,14 @@ button {
   font-size: 14px;
   line-height: 1.4285714286;
 }
+@media screen and (max-width: 767px) {
+  .modal-form__label {
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    line-height: 1.4166666667;
+  }
+}
 
 .modal-form__input,
 .modal-form__textarea {
@@ -736,6 +714,24 @@ button {
   border-radius: 10px;
   padding: 11px 16px;
   min-width: 368px;
+}
+@media screen and (max-width: 767px) {
+  .modal-form__input,
+.modal-form__textarea {
+    min-width: 224px;
+    padding: 8px 12px;
+  }
+}
+
+.modal-form__textarea {
+  min-width: 368px;
+  height: 84px;
+}
+@media screen and (max-width: 767px) {
+  .modal-form__textarea {
+    min-width: 224px;
+    height: 64px;
+  }
 }
 
 textarea {
@@ -752,6 +748,12 @@ textarea {
   padding: 12px 34px;
   border-color: transparent;
   margin-top: 32px;
+}
+@media screen and (max-width: 767px) {
+  .btn-locations,
+.btn-franchise {
+    margin-top: 24px;
+  }
 }
 .btn-locations:hover, .btn-locations:focus,
 .btn-franchise:hover,
@@ -822,8 +824,11 @@ textarea {
   .button__item {
     margin-left: auto;
     margin-right: auto;
-=======
+  }
+}
+
 .background {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -835,7 +840,7 @@ textarea {
 }
 @media screen and (max-width: 7670px) and (min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (min-resolution: 192dpi), screen and (max-width: 7670px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("../images/background/mobile/background_mobile_1170.png");
+    background-image: url("../images/background/mobile/background_mobile_1770.png");
   }
 }
 @media screen and (min-width: 768px) {
@@ -856,6 +861,5 @@ textarea {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .background {
     background-image: url("../images/background/desktop/background_desktop_2600.png");
-
   }
 }/*# sourceMappingURL=main.css.map */
