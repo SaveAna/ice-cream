@@ -1,5 +1,5 @@
 .section__products {
-  background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
+  background-image: url(../images/background/mobile/background_mobile_885.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,6 +176,13 @@
 .products__circle--yellow {
   background: getBgColor(yellow-circle);
   box-shadow: getShadow(prod-yellow);
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   &::before {
     content: '';
     position: absolute;
@@ -212,6 +219,13 @@
 .products__circle--coral {
   background: getBgColor(coral-cirle);
   box-shadow: getShadow(prod-coral);
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   &::before {
     content: '';
     position: absolute;
