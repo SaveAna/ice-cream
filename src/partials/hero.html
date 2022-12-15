@@ -1,25 +1,38 @@
 <section class="hero">
   <div class="container hero__container">
-    <h1 class="hero__title">ice cream made with passion</h1>
-    <ul class="hero__link-list">
-      <li><a class="hero__products-link">Products</a></li>
-      <li><a class="hero__made-link">How it’s made?</a></li>
-    </ul>
-    <!-- <ul class="hero__benefits">
-        <li>
-          <p>16</p>
-          <p>cafes</p>
+    <div class="hero__flex-box">
+      <div class="hero__main-block">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title-part">passion</span>
+        </h1>
+        <ul class="hero__link-list">
+          <li><a class="hero__products-link">Products</a></li>
+          <li><a class="hero__made-link">How it’s made?</a></li>
+        </ul>
+      </div>
+      <ul class="hero__benefits">
+        <li class="hero__benefits-item">
+          <p class="hero__benefits-numbers">16</p>
+          <p class="hero__benefits-name">cafes</p>
         </li>
-        <li>
-          <p>23</p>
-          <p>food trucks</p>
+        <li class="hero__benefits-item">
+          <p class="hero__benefits-numbers">23</p>
+          <p class="hero__benefits-name">food trucks</p>
         </li>
-      </ul> -->
-    <!-- <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p> -->
+      </ul>
+    </div>
+
+    <p class="hero__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
     <img
+      srcset="
+        ./images/hero/hero-fun-ice-cream/mobile/mobile_177.png  177w,
+        ./images/hero/hero-fun-ice-cream/tablet/tablet@1x.png   268w,
+        ./images/hero/hero-fun-ice-cream/desktop/desktop@1x.png 456w
+      "
+      sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 320px) 177px, 100vw"
       class="hero__fun-ice"
       src="./images/hero/hero-fun-ice-cream/mobile/mobile_177.png"
       alt="ice-cream plate"

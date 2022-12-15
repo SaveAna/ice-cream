@@ -100,3 +100,12 @@ $borders: (
 @function getBorder($var) {
   @return map-get($borders, $var);
 }
+
+$transition: (
+  'time': 250ms,
+  'func': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getAnim($var) {
+  @return map-get($transition, $var);
+}
