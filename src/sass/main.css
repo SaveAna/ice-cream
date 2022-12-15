@@ -77,6 +77,25 @@ button {
   overflow: hidden;
 }
 
+/* header */
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.burger {
+  fill: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
 .advanteges-list {
   max-width: 230px;
 }
@@ -367,6 +386,73 @@ button {
   }
 }
 
+
+.button__locations {
+  background-color: #f8d24e;
+  border-color: transparent;
+  padding: 10px 38px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+  transition: 250ms linear;
+}
+.button__locations:hover, .button__locations:focus {
+  background-color: #0a8817;
+}
+
+.button__franchise {
+  padding: 10px 53px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  transition: 250ms linear;
+}
+.button__franchise:hover, .button__franchise:focus {
+  border-color: #0a8817;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.button__list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .button__list {
+    margin-top: 40px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__list {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer {
   font-weight: 700;
 }
@@ -423,7 +509,11 @@ button {
 }
 
 .section__products {
+
   background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
+
+  background-image: url(../images/background/mobile/background_mobile_885.png);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -732,5 +822,40 @@ textarea {
   .button__item {
     margin-left: auto;
     margin-right: auto;
+=======
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 7670px) {
+  .background {
+    background-image: url("../images/background/mobile/background_mobile_885.png");
+  }
+}
+@media screen and (max-width: 7670px) and (min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (min-resolution: 192dpi), screen and (max-width: 7670px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/mobile/background_mobile_1170.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url("../images/background/tablet/background_tablet_963.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/tablet/background_tablet_1926.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background {
+    background-image: url("../images/background/desktop/background_desktop_1300.png");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/desktop/background_desktop_2600.png");
+
   }
 }/*# sourceMappingURL=main.css.map */

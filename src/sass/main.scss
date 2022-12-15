@@ -1,6 +1,9 @@
 @import './utils/variables';
 @import './base/base';
 
+/* header */
+@import './components/header';
+
 @import './components/advanteges';
 // contacts
 @import './components/contacts';
@@ -14,3 +17,7 @@
 
 //contacts-btn
 @import './components/contacts-btn';
+
+// sections-background
+@import './components/background';
+
