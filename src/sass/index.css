@@ -101,6 +101,25 @@ button {
   color: #FCFCFC;
 }
 
+@media screen and (max-width: 7670px) {
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
 .contacts__list {
   display: flex;
   gap: 16px;
@@ -112,9 +131,14 @@ button {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    gap: 32px;
+  }
+}
 
 .contacts__item {
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
@@ -129,6 +153,7 @@ button {
   .contacts__item {
     padding: 40px;
     flex-basis: 368px;
+    background-color: #ffffff;
   }
 }
 
@@ -406,6 +431,61 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.footer {
+  font-weight: 700;
+}
+
+.footer__text {
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.footer__uppertitle {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+
+.footer__undertitle {
+  margin-bottom: 60px;
+  font-size: 34px;
+  line-height: 1.2058823529;
+  letter-spacing: 0.04em;
+}
+
+.footer__list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer__icon {
+  fill: #ffffff;
+}
+
+.footer__contact {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.8333333333;
+}
+
+.footer__phone {
+  color: #fcfcfc;
+}
+
+.footer__copyright {
+  margin: auto;
+  width: 150px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #7a7a7a;
 }
 
 .section__products {
