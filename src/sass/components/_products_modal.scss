@@ -1,0 +1,215 @@
+.products-modal__window {
+  display: none;
+  position: absolute;
+  width: 280px;
+  height: 991px;
+  padding: 28px 28px 29px 28px;
+  background-color: getColor(primary-light);
+  border: 2px solid getColor(accent);
+  border-radius: 10px;
+  
+}
+.products-modal {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-modal__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.products-modal__item {
+  position: relative;
+  width: 132px;
+  height: 136px;
+  padding-top: 96px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 82px;
+  &:first-child {
+    background-color: transparent;
+  }
+  &:last-child {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+
+  &--green {
+    border: getBorder(prod-green);
+  }
+
+  &--yellow {
+    border: getBorder(prod-yellow);
+    background-color: getColor(prod-yellow);
+  }
+
+  &--coral {
+    border: getBorder(prod-coral);
+  }
+}
+
+.products-modal__circle {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-modal_circle--green {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -7;
+    left: 0;
+    background-image: url(../images/products/tablet-mobile/1/1_200.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+.products-modal_circle--yellow {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.products-modal_circle--coral {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  &::before {
+    content: '';
+    position: absolute;
+    top: -7;
+    left: 0;
+    background-image: url(../images/products/tablet-mobile/3/3_200.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+.products-modal_circle--yellow {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  &::before {
+    content: '';
+    position: absolute;
+    top: -7;
+    left: 0;
+    background-image: url(../images/products/tablet-mobile/2/2_200.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+.products-modal__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.products-form__input {
+  position: relative;
+  background: rgba(248, 210, 78, 0.1);
+  border: getBorder(menu-input);
+  border-radius: 10px;
+  background: rgba(248, 210, 78, 0.1);
+  height: 32px;
+  width: 100%;
+  margin-bottom: 12px;
+  &--comment {
+    margin-bottom: 0;
+    height: 65px;
+  }
+}
+
+.products-form__item {
+  position: relative;
+}
+.products-form__label {
+  position: absolute;
+  top: 8;
+  left: 12;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.products-form__list {
+  margin-bottom: 26px;
+}
+
+.products-form__btn {
+  font-family: inherit;
+  width: 114px;
+  height: 42px;
+  background: getColor(accent);
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+}
+
+.products-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-modal__close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  top: 12;
+  right: 12;
+}
