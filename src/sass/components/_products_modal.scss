@@ -1,5 +1,5 @@
 .products-modal__window {
-  display: none;
+  // display: none;
   position: absolute;
   width: 280px;
   height: 991px;
@@ -181,9 +181,13 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
-  &:hover,
+  &:hover {
+    background-color: getColor(active-green);
+  }
   &:focus {
-    cursor: pointer;
+        background-color: getColor(active-green);
+        color: getColor(primary-light);
+
   }
 }
 
