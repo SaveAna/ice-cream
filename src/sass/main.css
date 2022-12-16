@@ -1508,4 +1508,46 @@ textarea {
   .navigation__item:not(:last-child) {
     margin-bottom: 40px;
   }
+}
+.navigation__link {
+  color: #fcfcfc;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: #131313;
+}
+
+@media screen and (max-width: 550px) {
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #f8d24e;
+    border: transparent;
+    border-radius: 10px;
+    width: 152px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-button__icon {
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 551px) {
+  .nav-button {
+    display: none;
+  }
+}
+.nav-button:hover {
+  background-color: #0a8817;
+}
+.nav-button:focus {
+  background-color: #0a8817;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
