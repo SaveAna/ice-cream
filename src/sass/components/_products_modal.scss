@@ -166,6 +166,7 @@
     margin-bottom: 0;
     height: 65px;
   }
+
 }
 
 .products-form__item {
@@ -177,6 +178,8 @@
   left: 12;
   font-size: 12px;
   line-height: 1.4;
+  display: none;
+  .products-form__input:placeholder-shown + &{display: block;}
 }
 
 .products-form__list {
@@ -193,6 +196,10 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .products-form {
