@@ -138,6 +138,11 @@
   border-radius: 10px;
   padding: 11px 16px;
   min-width: 368px;
+  font-family: inherit;
+
+  &:focus .modal-form__label {
+    display: none;
+  }
 
   @media screen and (max-width: 767px) {
     min-width: 224px;
@@ -171,13 +176,17 @@ textarea {
   padding: 12px 34px;
   border-color: transparent;
   margin-top: 32px;
+  transition: 250ms linear;
 
   @media screen and (max-width: 767px) {
     margin-top: 24px;
   }
 
-  &:hover,
+  &:hover {
+    background-color: getColor(active-green);
+  }
   &:focus {
     background-color: getColor(active-green);
+    color: getColor(primary-light);
   }
 }
