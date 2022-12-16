@@ -1,5 +1,5 @@
 .products-modal__window {
-  display: none;
+  // display: none;
   position: absolute;
   width: 280px;
   height: 991px;
@@ -7,7 +7,6 @@
   background-color: getColor(primary-light);
   border: 2px solid getColor(accent);
   border-radius: 10px;
-  
 }
 .products-modal {
   margin-bottom: 32px;
@@ -162,11 +161,23 @@
   height: 32px;
   width: 100%;
   margin-bottom: 12px;
+  padding-left: 12px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  color: inherit;
+  resize: none;
   &--comment {
     margin-bottom: 0;
     height: 65px;
   }
+  &::placeholder {
+    font: inherit;
+  }
 
+  &:focus + .products-form__label {
+    display: none;
+  }
 }
 
 .products-form__item {
@@ -178,8 +189,6 @@
   left: 12;
   font-size: 12px;
   line-height: 1.4;
-  display: none;
-  .products-form__input:placeholder-shown + &{display: block;}
 }
 
 .products-form__list {
