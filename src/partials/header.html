@@ -16,9 +16,15 @@
       alt="logo-ice-cream"
     />
   </a>
-  <button class="burger">
+  <button
+    toggle
+    class="burger burger-toggle"
+    aria-label="open menu"
+    aria-expanded="false"
+  >
     <svg class="" width="32" height="32">
-      <use href="./images/svg/symbol-defs.svg#burger1"></use>
+      <use class="burger" href="./images/svg/symbol-defs.svg#burger1"></use>
+      <use class="cross" href="./images/svg/symbol-defs.svg#close-white"></use>
     </svg>
   </button>
 </header>
