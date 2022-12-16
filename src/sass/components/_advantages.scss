@@ -12,7 +12,7 @@
 }
 }
 
-.advanteges-list{
+.advantages-list{
     
     display: flex;
     flex-direction: column;
@@ -30,27 +30,27 @@
         }
 }
 
-.advanteges-list__item{
+.advantages-list__item{
    
 
     @media screen and (min-width: 768px) {
     width: 152px;
     }
     @media screen and (min-width: 1200px) {
-    width: 368px;
+    width: 367px;
     }
     
 }
 
  @media screen and (max-width: 767px) {
-    .advanteges-list__item--first{
+    .advantages-list__item--first{
        margin-bottom: 28px; }
-    .advanteges-list__item--second {
+    .advantages-list__item--second {
             margin-bottom: 22px;
     }
  }
 
-.advanteges-list__tittle{
+.advantages-list__tittle{
     display: flex;
 
     align-items: center;
@@ -81,7 +81,7 @@
 
 
     }
-.advanteges-list__tittle::before{
+.advantages-list__tittle::before{
     content: " ";
     height: 50px;
     width: 50px;
@@ -97,7 +97,7 @@
     }
 }
 
-.advanteges-list__tittle--first::before {
+.advantages-list__tittle--first::before {
     background-image: url(/src/images/advantages/cow/cow_50.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -107,7 +107,7 @@
     }
 }
 
-.advanteges-list__tittle--second::before {
+.advantages-list__tittle--second::before {
     background-image: url(/src/images/advantages/weight/weight_50.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -117,7 +117,7 @@
 
    }
 
-.advanteges-list__tittle--third::before {
+.advantages-list__tittle--third::before {
     background-image: url(/src/images/advantages/ice/ice_50.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -129,7 +129,7 @@
    }
 
 
-.advanteges-list__description{
+.advantages-list__description{
     font-weight: 700;
     font-size: 12px;
     line-height: calc(20/12);
