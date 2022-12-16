@@ -1,7 +1,9 @@
 <div class="modal locations-modal" data-modal="1">
-  <svg class="modal__cross js-modal-close" width="24" height="24">
-    <use href="./images/svg/symbol-defs.svg#close-black"></use>
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#close-black"></use>
+    </svg>
+  </button>
 
   <h2 class="modal__title">Our Locations</h2>
 
@@ -26,9 +28,11 @@
 </div>
 
 <div class="modal franchise-modal" data-modal="2">
-  <svg class="modal__cross js-modal-close" width="24" height="24">
-    <use href="./images/svg/symbol-defs.svg#close-black"></use>
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#close-black"></use>
+    </svg>
+  </button>
 
   <h2 class="modal__title">
     Thank you for your interest in owning an Ice Cream shop
@@ -43,7 +47,6 @@
 
   <ul class="franchise__form">
     <li class="modal-form__item">
-      <label class="modal-form__label" for="name">Name</label>
       <input
         class="modal-form__input"
         type="text"
@@ -51,9 +54,9 @@
         id="name"
         placeholder=" "
       />
+      <label class="modal-form__label" for="name">Name</label>
     </li>
     <li class="modal-form__item">
-      <label class="modal-form__label" for="tel">Phone</label>
       <input
         class="modal-form__input"
         type="tel"
@@ -61,9 +64,9 @@
         id="tel"
         placeholder=" "
       />
+      <label class="modal-form__label" for="tel">Phone</label>
     </li>
     <li class="modal-form__item">
-      <label class="modal-form__label" for="mail">Email</label>
       <input
         class="modal-form__input"
         type="email"
@@ -71,16 +74,18 @@
         id="mail"
         placeholder=" "
       />
+      <label class="modal-form__label" for="mail">Email</label>
     </li>
     <li class="modal-form__item">
-      <label class="modal-form__label" for="comment">Comment</label>
       <textarea
         class="modal-form__textarea"
         name="comment"
         id="comment"
         cols="3"
         rows="4"
+        placeholder=" "
       ></textarea>
+      <label class="modal-form__label" for="comment">Comment</label>
     </li>
   </ul>
   <button class="button btn-franchise" type="submit">Submit</button>

@@ -1314,7 +1314,7 @@ button {
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  padding: 32px 50px;
+  padding: 32px 60px;
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   background-color: #fcfcfc;
@@ -1372,6 +1372,7 @@ button {
 .franchise-modal {
   width: 568px;
   height: 668px;
+  padding: 32px 50px;
 }
 @media screen and (max-width: 767px) {
   .franchise-modal {
@@ -1385,7 +1386,8 @@ button {
   top: 12px;
   right: 12px;
   fill: #131313;
-  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 @media screen and (max-width: 767px) {
   .modal__cross {
@@ -1435,8 +1437,18 @@ button {
   min-width: 368px;
   font-family: inherit;
 }
-.modal-form__input:focus .modal-form__label,
-.modal-form__textarea:focus .modal-form__label {
+.modal-form__input:focus + .modal-form__label,
+.modal-form__textarea:focus + .modal-form__label {
+  display: none;
+}
+.modal-form__input:not(:-moz-placeholder-shown) + .modal-form__label, .modal-form__textarea:not(:-moz-placeholder-shown) + .modal-form__label {
+  display: none;
+}
+.modal-form__input:not(:-ms-input-placeholder) + .modal-form__label, .modal-form__textarea:not(:-ms-input-placeholder) + .modal-form__label {
+  display: none;
+}
+.modal-form__input:not(:placeholder-shown) + .modal-form__label,
+.modal-form__textarea:not(:placeholder-shown) + .modal-form__label {
   display: none;
 }
 @media screen and (max-width: 767px) {
