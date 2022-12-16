@@ -139,7 +139,7 @@
 }
 
 .footer__copyright-container {
-  border-top: 1px solid #e1e1e1;
+  border-top: getBorder(footer);
   width: 100%;
 }
 
