@@ -30,11 +30,8 @@
         border-radius: 10px;
         border: transparent;
 
-        @media screen and (min-width:768px) {
-            display: block;
+        @media screen and (max-width:767px) {
+            display: none;
         }
 }
 
-.is-hidden {
-    display: none;
-}
