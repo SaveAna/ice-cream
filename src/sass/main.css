@@ -1459,23 +1459,20 @@ textarea {
 
 .nav-menu {
   z-index: 10;
-}
-@media screen and (max-width: 1200px) {
-  .nav-menu {
-    position: absolute;
-    text-align: center;
-    background-color: #84a178;
-    width: 100%;
-  }
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 @media screen and (max-width: 550px) {
   .nav-menu {
+    background-color: #84a178;
     padding: 39px 32px 64px;
     height: 568px;
   }
 }
 @media screen and (min-width: 551px) {
   .nav-menu {
+    background-color: #97af8d;
     padding: 56px 32px 64px;
     height: 1024px;
   }
@@ -1486,17 +1483,29 @@ textarea {
   }
 }
 
+.navigation {
+  font-weight: 700;
+}
 @media screen and (max-width: 550px) {
   .navigation {
-    font-weight: 700;
     font-size: 32px;
     line-height: 1.22;
+    margin-bottom: 110px;
   }
 }
 @media screen and (min-width: 551px) {
   .navigation {
-    font-weight: 700;
     font-size: 48px;
     line-height: 1.23;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 551px) {
+  .navigation__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

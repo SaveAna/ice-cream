@@ -23,13 +23,26 @@
 
 .navigation {
   font-weight: 700;
+
   @media screen and (max-width: 550px) {
     font-size: 32px;
     line-height: 1.22;
+
+    margin-bottom: 110px;
   }
 
   @media screen and (min-width: 551px) {
     font-size: 48px;
     line-height: 1.23;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 550px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 551px) {
+      margin-bottom: 40px;
+    }
   }
 }
