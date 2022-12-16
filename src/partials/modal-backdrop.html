@@ -1,16 +1,38 @@
 <div class="modal locations-modal" data-modal="1">
-  <svg class="modal__cross js-modal-close" width="24" height="24">
-    <use href="./images/svg/symbol-defs.svg#close-black"></use>
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#close-black"></use>
+    </svg>
+  </button>
 
   <h2 class="modal__title">Our Locations</h2>
-  <button class="button btn-locations" type="button">Open map</button>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.5586075296!2d34.487198475042874!3d49.60213457666439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1669304966719!5m2!1sru!2sua"
+    width="448"
+    height="260"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="modal-location__map"
+  ></iframe>
+
+  <a
+    class="button btn-locations"
+    href="https://www.google.com/maps/place/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/@49.6020511,34.401354,12z/data=!3m1!4b1!4m13!1m7!3m6!1s0x40d825e5a6576a0d:0xcdfded8b7b40ec91!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!3b1!8m2!3d49.588267!4d34.5514169!3m4!1s0x40d825e425e6ba6b:0xcf3e6bdfb9e4ca82!8m2!3d49.5882636!4d34.5514226?hl=ru"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+    >Open map</a
+  >
 </div>
 
 <div class="modal franchise-modal" data-modal="2">
-  <svg class="modal__cross js-modal-close" width="24" height="24">
-    <use href="./images/svg/symbol-defs.svg#close-black"></use>
-  </svg>
+  <button class="modal__cross js-modal-close" type="button">
+    <svg width="24" height="24">
+      <use href="./images/svg/symbol-defs.svg#close-black"></use>
+    </svg>
+  </button>
 
   <h2 class="modal__title">
     Thank you for your interest in owning an Ice Cream shop
@@ -25,26 +47,45 @@
 
   <ul class="franchise__form">
     <li class="modal-form__item">
+      <input
+        class="modal-form__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder=" "
+      />
       <label class="modal-form__label" for="name">Name</label>
-      <input class="modal-form__input" type="text" name="name" id="name" />
     </li>
     <li class="modal-form__item">
+      <input
+        class="modal-form__input"
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder=" "
+      />
       <label class="modal-form__label" for="tel">Phone</label>
-      <input class="modal-form__input" type="tel" name="tel" id="tel" />
     </li>
     <li class="modal-form__item">
+      <input
+        class="modal-form__input"
+        type="email"
+        name="mail"
+        id="mail"
+        placeholder=" "
+      />
       <label class="modal-form__label" for="mail">Email</label>
-      <input class="modal-form__input" type="email" name="mail" id="mail" />
     </li>
     <li class="modal-form__item">
-      <label class="modal-form__label" for="comment">Comment</label>
       <textarea
         class="modal-form__textarea"
         name="comment"
         id="comment"
         cols="3"
         rows="4"
+        placeholder=" "
       ></textarea>
+      <label class="modal-form__label" for="comment">Comment</label>
     </li>
   </ul>
   <button class="button btn-franchise" type="submit">Submit</button>

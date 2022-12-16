@@ -15,9 +15,17 @@
   text-align: center;
   transition: 250ms linear;
 
-  &:hover,
+  &:hover {
+    background-color: getColor(active-green);
+  }
+
   &:focus {
     background-color: getColor(active-green);
+    color: getColor(primary-light);
+  }
+
+  &:focus .button__icon {
+    fill: getColor(primary-light);
   }
 }
 
@@ -39,9 +47,17 @@
 
   transition: 250ms linear;
 
-  &:hover,
+  &:hover {
+    border-color: getColor(active-green);
+  }
+
   &:focus {
     border-color: getColor(active-green);
+    color: getColor(primary-light);
+  }
+
+  &:focus .button__icon {
+    fill: getColor(primary-light);
   }
 }
 
@@ -70,4 +86,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.button__icon {
+  transition: 250ms linear;
 }
