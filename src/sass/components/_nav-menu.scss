@@ -1,0 +1,35 @@
+.nav-menu {
+  z-index: 10;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: 550px) {
+    background-color: getBgColor(main-green);
+    padding: 39px 32px 64px;
+    height: 568px;
+  }
+
+  @media screen and (min-width: 551px) {
+    background-color: getBgColor(second-green);
+    padding: 56px 32px 64px;
+    height: 1024px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.navigation {
+  font-weight: 700;
+  @media screen and (max-width: 550px) {
+    font-size: 32px;
+    line-height: 1.22;
+  }
+
+  @media screen and (min-width: 551px) {
+    font-size: 48px;
+    line-height: 1.23;
+  }
+}
