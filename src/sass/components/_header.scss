@@ -1,9 +1,27 @@
 .header {
     padding-top: 12px;
     padding-bottom: 12px;
+    
+    @media screen and (max-width:319px) {
+        width: 100wv;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.header__mobile {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+    @media screen and (min-width:768px) {
+        gap: 440px;
+    }
 }
 
 .burger {
@@ -17,6 +35,7 @@
 }
 
 .header__button {
+        font-family: inherit;
         font-weight: 600;
         font-size: 14px;
         line-height: calc(17 / 14);
@@ -29,6 +48,19 @@
         height: 42px;
         border-radius: 10px;
         border: transparent;
+
+        &:hover {
+         background-color: #0A8817;
+        }
+
+        &:focus {
+            background-color: #0A8817;
+            color: #fff;
+        }
+
+        &:disabled {
+            background-color: #ABABAB;
+        }
 
         @media screen and (max-width:767px) {
             display: none;
