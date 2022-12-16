@@ -1,5 +1,5 @@
 .products-modal__window {
-  display: none;
+  // display: none;
   position: absolute;
   width: 280px;
   height: 991px;
@@ -85,7 +85,6 @@
   }
 }
 
-
 .products-modal_circle--coral {
   background: getBgColor(coral-circle);
   box-shadow: getShadow(prod-coral);
@@ -104,7 +103,7 @@
 }
 
 .products-modal_circle--yellow {
-   background: getBgColor(yellow-circle);
+  background: getBgColor(yellow-circle);
   box-shadow: getShadow(prod-yellow);
   &::before {
     content: '';
@@ -138,6 +137,7 @@
   width: 100%;
   margin-bottom: 12px;
   padding-left: 12px;
+  padding-right: 12px;
   font-family: inherit;
   font-size: 12px;
   line-height: 1.4;
@@ -146,12 +146,10 @@
   &--comment {
     margin-bottom: 0;
     height: 65px;
-  }
-  &::placeholder {
-    font: inherit;
+    padding-top: 8px;
   }
 
-  &:focus + .products-form__label {
+  &:not(:placeholder-shown) + .products-form__label {
     display: none;
   }
 }
@@ -185,9 +183,8 @@
     background-color: getColor(active-green);
   }
   &:focus {
-        background-color: getColor(active-green);
-        color: getColor(primary-light);
-
+    background-color: getColor(active-green);
+    color: getColor(primary-light);
   }
 }
 
