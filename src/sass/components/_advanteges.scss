@@ -21,6 +21,7 @@
     
     @media screen and (min-width: 768px){
         flex-direction: row;
+        justify-content: space-between;
         gap: 80px;
     }
 
@@ -28,6 +29,26 @@
         gap: 32px;
         }
 }
+
+.advanteges-list__item{
+   
+
+    @media screen and (min-width: 768px) {
+    width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: 368px;
+    }
+    
+}
+
+ @media screen and (max-width: 767px) {
+    .advanteges-list__item--first{
+       margin-bottom: 28px; }
+    .advanteges-list__item--second {
+            margin-bottom: 22px;
+    }
+ }
 
 .advanteges-list__tittle{
     display: flex;
@@ -45,15 +66,17 @@
     color:getColor(primary-light);
 
     @media screen and (min-width: 768px) {
+        
         margin-bottom: 12px;
-
         font-size: 48px;
         line-height: calc(58.51/48);
+       
     }
     @media screen and (min-width: 1200px){
         
         font-size: 58px;
         line-height: calc(70.7/58);
+       
     }
 
 
@@ -85,22 +108,22 @@
 }
 
 .advanteges-list__tittle--second::before {
-    background-image: url(/src/images/advantages/ice/ice_50.png);
+    background-image: url(/src/images/advantages/weight/weight_50.png);
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx){background-image: url(/src/images/advantages/ice/ice_100.png);
+    (min-resolution: 2dppx){background-image: url(/src/images/advantages/weight/weight_100.png);
 }
 
    }
 
 .advanteges-list__tittle--third::before {
-    background-image: url(/src/images/advantages/weight/weight_50.png);
+    background-image: url(/src/images/advantages/ice/ice_50.png);
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
-    background-image: url(/src/images/advantages/weight/weight_100.png);
+    background-image: url(/src/images/advantages/ice/ice_100.png);
     }
 
    }
@@ -126,15 +149,7 @@
         line-height: calc(28.16/16);
     }   
 }
-@media screen and (max-width: 479px) {
-.advanteges-list__description--first {
-        margin-bottom: 22px;
-    }
 
-    .advanteges-list__description--second {
-        margin-bottom: 28px;
-    }
-}
 
 
 
