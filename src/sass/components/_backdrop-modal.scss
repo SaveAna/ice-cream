@@ -180,6 +180,8 @@ textarea {
 
   @media screen and (max-width: 767px) {
     margin-top: 24px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
   }
 
   &:hover {
@@ -188,5 +190,15 @@ textarea {
   &:focus {
     background-color: getColor(active-green);
     color: getColor(primary-light);
+  }
+}
+
+.modal-location__map {
+  margin-top: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+    width: 224px;
+    height: 199px;
   }
 }
