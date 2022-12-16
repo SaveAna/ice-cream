@@ -76,12 +76,8 @@
 }
 
 .burger-toggle {
-  transition: transform 500ms getAnim(func);
+  transition: transform 500ms getAnim(func), fill getAnim(time) getAnim(func);
   z-index: 10;
-
-  // &--append {
-  //   margin-left: auto;
-  // }
 
   &:hover,
   &:focus {
@@ -92,10 +88,6 @@
     transform: scale(1.5);
     transition: transform 500ms getAnim(func);
   }
-
-  // @include respond-to(tablet) {
-  //   display: none;
-  // }
 
   .cross {
     display: none;
@@ -111,29 +103,3 @@
     }
   }
 }
-
-// -----------
-// @include respond-to(max-mobile) {
-//   position: fixed;
-//   left: 0;
-//   top: 0;
-//   height: 100%;
-//   width: 100%;
-//   padding: 48px 40px 48px;
-//   background-color: getColor(primary-white);
-//   z-index: 8;
-//   transform: translateX(100%);
-//   @include base-transition(transform);
-//   overflow-y: scroll;
-
-//   &--open {
-//     transform: translateX(0);
-//   }
-// }
-
-// @include respond-to(tablet) {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 100%;
-// }
