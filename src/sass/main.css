@@ -81,9 +81,32 @@ button {
 .header {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+@media screen and (max-width: 319px) {
+  .header {
+    width: 100wv;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header__mobile {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header__mobile {
+    gap: 440px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .burger {
@@ -94,6 +117,46 @@ button {
   align-items: center;
   background-color: transparent;
   border: none;
+}
+
+.header__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #F8D24E;
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  border: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__button:hover {
+  background-color: #0A8817;
+}
+.header__button:focus {
+  background-color: #0A8817;
+  color: #fff;
+  fill: #fff;
+}
+.header__button:disabled {
+  background-color: #ABABAB;
+}
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__svg {
+  padding: 0;
 }
 
 .container-advantages {
@@ -1320,23 +1383,6 @@ button {
   visibility: visible;
 }
 
-.locations-modal,
-.franchise-modal {
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 60px;
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #fcfcfc;
-}
-@media screen and (max-width: 767px) {
-  .locations-modal,
-.franchise-modal {
-    padding: 28px;
-  }
-}
-
 .locations-modal {
   width: 568px;
   height: 458px;
@@ -1356,7 +1402,24 @@ button {
 @media screen and (max-width: 767px) {
   .franchise-modal {
     width: 280px;
-    height: 100%;
+    height: 710px;
+  }
+}
+
+.locations-modal,
+.franchise-modal {
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 32px 60px;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fcfcfc;
+}
+@media screen and (max-width: 767px) {
+  .locations-modal,
+.franchise-modal {
+    padding: 28px;
   }
 }
 
@@ -1368,8 +1431,9 @@ button {
   border: none;
   background-color: transparent;
 }
+
 @media screen and (max-width: 767px) {
-  .modal__cross {
+  .modal__svg {
     width: 20px;
     height: 20px;
   }
