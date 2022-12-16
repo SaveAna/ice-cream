@@ -77,6 +77,25 @@ button {
   overflow: hidden;
 }
 
+/* header */
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.burger {
+  fill: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
 .advanteges-list {
   max-width: 230px;
 }
@@ -489,7 +508,7 @@ button {
 }
 
 .section__products {
-  background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
+  background-image: url(../images/background/mobile/background_mobile_885.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -618,107 +637,38 @@ button {
   margin-top: auto;
 }
 
-.about__container {
-  padding-top: 61px;
-  padding-bottom: 64px;
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
-.about__container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 7670px) {
+  .background {
+    background-image: url("../images/background/mobile/background_mobile_885.png");
+  }
 }
-
-.about__thumb {
-  position: relative;
-  width: 279px;
-  height: 279px;
-  background-color: #F8D24E;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-  border-radius: 50%;
-  margin-bottom: 62px;
+@media screen and (max-width: 7670px) and (min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (min-resolution: 192dpi), screen and (max-width: 7670px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/mobile/background_mobile_1170.png");
+  }
 }
-
-.about__cow {
-  position: absolute;
-  top: 22px;
-  width: 279px;
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url("../images/background/tablet/background_tablet_963.png");
+  }
 }
-
-.about__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.21;
-  text-transform: uppercase;
-  color: #fcfcfc;
-  margin-bottom: 12px;
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/tablet/background_tablet_1926.png");
+  }
 }
-
-.about__titel {
-  font-family: "Seymour One";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.27;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fcfcfc;
-  margin-bottom: 32px;
-  width: 200px;
+@media screen and (min-width: 1200px) {
+  .background {
+    background-image: url("../images/background/desktop/background_desktop_1300.png");
+  }
 }
-
-.about__values {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2.1;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #fcfcfc;
-  width: 220px;
-  margin-bottom: 4px;
-}
-
-.about__recipes {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.9;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #fcfcfc;
-  width: 220px;
-  margin-bottom: 10px;
-}
-
-.about__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 164px;
-  min-height: 42px;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  background: #F8D24E;
-}
-
-.about__btn:hover {
-  background-color: #0a8817;
-  color: #000000;
-  border: 2px solid #0a8817;
-}
-
-.about__btn:focus {
-  background-color: #0a8817;
-  color: #ffffff;
-  border: 2px solid #0a8817;
-  fill: #ffffff;
-}
-
-.about__btn--text {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  margin-right: 4px;
-}/*# sourceMappingURL=index.css.map */
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .background {
+    background-image: url("../images/background/desktop/background_desktop_2600.png");
+  }
+}/*# sourceMappingURL=main.css.map */

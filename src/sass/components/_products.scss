@@ -1,5 +1,5 @@
 .section__products {
-  background-image: url(../images/background/mobile/Backgroud_mobile_885.png);
+  background-image: url(../images/background/mobile/background_mobile_885.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +100,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-   &::before {
+  &::before {
     content: '';
     position: absolute;
     top: -11;
@@ -123,7 +123,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    &::before {
+  &::before {
     content: '';
     position: absolute;
     top: -11;
@@ -139,8 +139,7 @@
 }
 
 .products__btn {
-    border: none;
-    background-color: inherit;
-    margin-top: auto;
- 
+  border: none;
+  background-color: inherit;
+  margin-top: auto;
 }
