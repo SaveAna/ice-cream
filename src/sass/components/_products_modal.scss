@@ -217,6 +217,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  transition: background-color getAnim(time) getAnim(func);
   &:hover {
     background-color: getColor(active-green);
   }
