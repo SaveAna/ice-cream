@@ -157,6 +157,28 @@ button {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger {
+    gap: 440px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.burger {
+  fill: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
 
 .header__button {
   font-weight: 600;
