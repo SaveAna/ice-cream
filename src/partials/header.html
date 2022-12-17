@@ -16,6 +16,12 @@
         alt="logo-ice-cream"
       />
     </a>
+
+
+    <button class="burger">
+      <svg class="header__svg" width="32" height="32">
+        <use href="./images/svg/symbol-defs.svg#burger1"></use>
+
     <button
       toggle
       class="burger burger-toggle"
@@ -28,11 +34,18 @@
           class="cross"
           href="./images/svg/symbol-defs.svg#close-white"
         ></use>
+
       </svg>
     </button>
   </div>
+  <ul class="header__list">
+    <li class="list__text">Home</li>
+    <li class="list__text">How it’s made?</li>
+    <li class="list__text">Our products</li>
+    <li class="list__text">Contact</li>
+  </ul>
 
-  <button type="button" class="header__button">
+  <button class="header__button js-open-modal" data-modal="3" type="button">
     Buy now
     <svg class="" width="12" height="12">
       <use href="./images/svg/symbol-defs.svg#bird"></use>
