@@ -24,6 +24,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media screen and (min-width:1200px) {
+        gap: 300px;
+    }
 }
 
 .burger {
@@ -34,6 +38,10 @@
         align-items: center;
         background-color: transparent;
         border: none;
+
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .header__button {
@@ -79,3 +87,7 @@
     padding: 0;
 }
 
+.header__list {
+    display: flex;
+    gap: 28px;
+}
