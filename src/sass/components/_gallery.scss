@@ -22,10 +22,7 @@
          margin: 0 auto;
          padding: 0px 20px;
          min-width: 320px;
-         background-color: transparent;
-         overflow: hidden;
-         border-radius: 8px;
- 
+         
      //mobile screen
      @media screen and (min-width: 480px) {
          width: 320px;
@@ -42,7 +39,21 @@
          padding-right: 94px;
      }
      }
- 
+
+     &__thumb {
+        border-radius: 8px;
+        overflow: hidden;
+
+        //tablet screen
+    @media screen and (min-width: 768px) {
+        border-radius: 18px;
+    }
+       //desktop screen
+    @media screen and (min-width: 1200px) {
+        border-radius: 24px;
+    }
+     }
+
      &__card {
          width: 280px;
  
