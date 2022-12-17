@@ -11,7 +11,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .box {
+    & {
       background-image: url('../images/hero/hero-dots/mobile@2x.png');
     }
   }
@@ -24,7 +24,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .box {
+      & {
         background-image: url('../images/hero/hero-dots/tablet@2x.png');
       }
     }
@@ -39,7 +39,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .box {
+      & {
         background-image: url('../images/hero/hero-dots/desktop@2x.png');
       }
     }
@@ -65,8 +65,7 @@
   // width: 247px;
 
   font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 26px;
   line-height: calc(33 / 26);
   letter-spacing: 0.04em;
@@ -111,8 +110,6 @@
   padding: 11px 24px;
   cursor: pointer;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -156,8 +153,6 @@
   // min-width: 100px;
   cursor: pointer;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -198,12 +193,12 @@
 }
 
 .hero__benefits {
-  margin-top: 14px;
+  padding-top: 14px;
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 8px;
+    padding-top: 8px;
   }
 }
 
@@ -218,8 +213,6 @@
 .hero__benefits-numbers {
   margin-bottom: 4px;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 900;
   font-size: 28px;
   line-height: calc(34 / 28);
@@ -236,9 +229,6 @@
 }
 
 .hero__benefits-name {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
 
@@ -266,12 +256,8 @@
 }
 
 .hero__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: calc(17 / 12);
-  /* or 17px */
 
   color: #fcfcfc;
   @media screen and (min-width: 1200px) {
