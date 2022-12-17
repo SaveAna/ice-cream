@@ -1,15 +1,99 @@
 .about__container {
+    display: flex;
+    flex-direction: column;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+
     padding-top: 61px;
-    padding-bottom: 64px;
-    
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+// @media screen and (max-width: 767px) {
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+@media screen and (min-width: 768px) {
+    padding-top: 60px;    
+    padding-bottom: 60px;
+    padding-left: 32px;
+    padding-right: 34px;
+}
+@media screen and (min-width: 1200px) {
+    padding-top: 60px;    
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 }
 
-.about__container {
+.about__content {
+    
+    @media screen and (min-width: 768px) {
+    display: flex;}
+}
+
+.about__topic{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
 
+.about__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: getColor(primary-light);
+    
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23; 
+    }
+    @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    }
+    
+}
+
+.about__title {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: getColor(primary-light);
+    
+    margin-bottom: 32px;
+    
+    @media screen and (max-width: 767px) {
+    width: 200px;}
+    
+    @media screen and (min-width: 768px) {
+    
+    font-size: 34px;
+    line-height: 1.26;  
+    letter-spacing: 0.06em;  
+
+    margin-bottom: 72px;
+    }
+        @media screen and (min-width: 1200px) {
+     
+    font-size: 36px;
+    line-height: 1.25;
+
+    margin-bottom: 82px;
+    }
 }
 
 .about__thumb {
@@ -22,69 +106,124 @@
     border-radius: 50%;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 50%;
-    margin-bottom: 62px;
+    
+    @media screen and (max-width: 767px) {
+    margin-bottom: 62px;}
+
+    @media screen and (min-width: 768px) {
+        width: 330px;
+        height: 330px;
+        // margin-bottom: 86px; 
+        margin-right: 38px;  
+             }
+        
+        @media screen and (min-width: 1200px) {
+        width: 490px;
+        height: 490px;
+        // margin-bottom: 99px;
+        margin-right: 110px;  
+            }
 }
 
 .about__cow {
     position: absolute;
     top: 22px;
-       
     width: 279px;
 
+    @media screen and (min-width: 768px) {
+    top: 26px; 
+    width: 330px;   
+         }
+    
+    @media screen and (min-width: 1200px) {
+    top: 39px;
+    width: 490px;
+        }
     }
 
-.about__label {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.21;
-    text-transform: uppercase;
-    color: getColor(primary-light);
+.about__info {    
+    width: 220px;
+
+    @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;}
     
-    margin-bottom: 12px;
-    
-}
+    @media screen and (min-width: 768px) {
+    width: 334px;
+    padding-top: 8px;}
 
-.about__titel {
-    font-family: 'Seymour One';
-   
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.27;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: getColor(primary-light);
-
-    margin-bottom: 32px;
-    width: 200px;
-}
+    @media screen and (min-width: 1200px) {
+    width: 463px;
+    padding-top: 90px;}
+} 
 
 .about__values {
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.1;
-    text-align: center;
+    line-height: 1.76;
     letter-spacing: 0.04em;
     color: getColor(primary-light);
 
-    width: 220px;
-
     margin-bottom: 4px;
+   
+    @media screen and (max-width: 767px) {
+    text-align: center;}
+
+    @media screen and (min-width: 768px) {
+    margin-bottom: 8px;}
+
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    }
+    
 }
 
 .about__recipes {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.9;
-    text-align: center;
-    letter-spacing: 0.04em;
+    line-height: 1.62;
     color: getColor(primary-light);
 
-    width: 220px;
-
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;}
+
+    @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    letter-spacing: 0.04em;}
+
+    @media screen and (min-width: 1200px) {
+    line-height: 1.94;
+    font-size: 14px;}
+}
+
+.about__recap{
+    @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
+    @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    color: getColor(primary-light);
+    
+    margin-bottom: 32px;}
+    
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+
+    margin-bottom: 54px;}
 }
 
 .about__btn {
@@ -98,6 +237,10 @@
     
     border-radius: 10px;
     background: #F8D24E;
+
+@media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;}
 }
 
 .about__btn:hover {
