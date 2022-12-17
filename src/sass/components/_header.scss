@@ -71,7 +71,7 @@
   text-align: center;
   justify-content: center;
   gap: 8px;
-  background-color: #f8d24e;
+  background-color: getColor(accent);
   width: 152px;
   height: 42px;
   border-radius: 10px;
@@ -86,7 +86,7 @@
 
   &:focus {
     background-color: #0a8817;
-    color: #fff;
+    color: getColor(primary-white);
     fill: #fff;
   }
 
