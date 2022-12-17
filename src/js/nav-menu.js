@@ -7,6 +7,7 @@
     anchor_1: document.querySelector('[nav-link1]'),
     anchor_2: document.querySelector('[nav-link2]'),
     anchor_3: document.querySelector('[nav-link3]'),
+    butBtn: document.querySelector('[buy-button]'),
   };
 
   refs.toggleMenuBtn.addEventListener('click', toggleMenu);
@@ -14,6 +15,7 @@
   refs.anchor_1.addEventListener('click', toggleMenu);
   refs.anchor_2.addEventListener('click', toggleMenu);
   refs.anchor_3.addEventListener('click', toggleMenu);
+  refs.butBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('nav-menu--open');
