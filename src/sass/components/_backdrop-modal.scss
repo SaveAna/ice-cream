@@ -127,16 +127,17 @@
 
 .modal-form__label {
   position: absolute;
-  top: 11px;
-  left: 66px;
-  font-size: 14px;
-  line-height: calc(20 / 14);
 
-  @media screen and (max-width: 767px) {
-    top: 8px;
-    left: 12px;
-    font-size: 12px;
-    line-height: calc(17 / 12);
+  top: 8px;
+  left: 12px;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+
+  @media screen and (min-width: 768px) {
+    top: 10px;
+    left: 50px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
   }
 }
 
