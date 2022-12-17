@@ -315,7 +315,7 @@ button {
 
 .contacts {
   position: relative;
-  top: 1130px;
+  top: 1080px;
 }
 @media screen and (max-width: 767px) {
   .contacts {
@@ -360,6 +360,11 @@ button {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__item {
+    padding: 40px 32px 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__item {
@@ -586,17 +591,17 @@ button {
 }
 
 .footer {
-  padding-top: 30px;
+  padding-top: 1095px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding-top: 20px;
+    padding-top: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding-top: 60px;
+    padding-top: 636px;
   }
 }
 
@@ -1750,17 +1755,17 @@ button {
 
 .modal-form__label {
   position: absolute;
-  top: 11px;
-  left: 66px;
-  font-size: 14px;
-  line-height: 1.4285714286;
+  top: 8px;
+  left: 12px;
+  font-size: 12px;
+  line-height: 1.4166666667;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .modal-form__label {
-    top: 8px;
-    left: 12px;
-    font-size: 12px;
-    line-height: 1.4166666667;
+    top: 10px;
+    left: 50px;
+    font-size: 14px;
+    line-height: 1.4285714286;
   }
 }
 
