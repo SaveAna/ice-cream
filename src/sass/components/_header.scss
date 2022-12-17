@@ -2,17 +2,16 @@
   padding-top: 12px;
   padding-bottom: 12px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        gap: 32px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @media screen and (min-width:1200px) {
-        justify-content: space-between;
-    }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 
   @media screen and (max-width: 319px) {
     width: 100wv;
@@ -24,7 +23,6 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
 .header__mobile {
@@ -32,29 +30,6 @@
   align-items: baseline;
   justify-content: space-between;
 
-
-    @media screen and (min-width:768px) {
-        gap: 440px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-}
-
-.burger {
-    fill: getColor(primary-white);
-        padding-left: 0;
-        padding-right: 0;
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-
-    @media screen and (min-width:1200px) {
-        display: none;
-    }
-=======
   @media screen and (min-width: 768px) {
     gap: 440px;
     justify-content: center;
@@ -71,6 +46,25 @@
   background-color: transparent;
   border: none;
 
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 440px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.burger {
+  fill: getColor(primary-white);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
 }
 
 .header__button {
@@ -115,24 +109,22 @@
   padding: 0;
 }
 
-
 .header__list {
-    display: flex;
-    gap: 28px;
+  display: flex;
+  gap: 28px;
 }
 
 .list__text {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(20 / 16);
-        color: #FCFCFC;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #fcfcfc;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            color: #F8D24E;
-        }
+  &:hover,
+  &:focus {
+    color: #f8d24e;
+  }
 }
-
