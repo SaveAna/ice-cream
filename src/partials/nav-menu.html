@@ -1,0 +1,53 @@
+<div menu class="nav-menu">
+  <div class="upper">
+    <a href="./"
+      ><img
+        class="logo"
+        srcset="
+          images/logo/mobile/logo_40.png    40w,
+          images/logo/tablet/logo_48.png    48w,
+          images/logo/desktop/logo_60.png   60w,
+          images/logo/mobile/logo_80.png    80w,
+          images/logo/tablet/logo_96.png    96w,
+          images/logo/desktop/logo_120.png 120w
+        "
+        src="./images/logo/mobile/logo_40.png"
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+        alt="logo-ice-cream"
+      />
+    </a>
+    <button
+      tablet-cross
+      class="burger burger-toggle"
+      aria-label="open menu"
+      aria-expanded="false"
+    >
+      <svg class="" width="32" height="32">
+        <use
+          class="tablet-cross"
+          href="./images/svg/symbol-defs.svg#close-white"
+        ></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="navigation">
+    <li class="navigation__item">
+      <a class="navigation__link" href="index.html">Home</a>
+    </li>
+    <li class="navigation__item">
+      <a nav-link1 class="navigation__link" href="#about">How it’s made?</a>
+    </li>
+    <li class="navigation__item">
+      <a nav-link2 class="navigation__link" href="#products">Our products</a>
+    </li>
+    <li class="navigation__item">
+      <a nav-link3 class="navigation__link" href="#contacts">Contact</a>
+    </li>
+  </ul>
+  <button class="nav-button">
+    Buy now
+    <svg class="nav-button__icon" width="12" height="12">
+      <use href="./images/svg/symbol-defs.svg#bird"></use>
+    </svg>
+  </button>
+</div>

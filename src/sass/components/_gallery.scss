@@ -1,0 +1,67 @@
+.gallery {
+    margin: 0 auto;
+     background-color: transparent;
+ 
+     position: absolute;
+     top:-32px;
+     right: 50%;
+     z-index:100;
+
+     transform: translateX(50%);
+
+     //tablet screen
+     @media screen and (min-width: 768px) {
+        top: -144px;
+    }
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        top: -98px;
+    }
+ 
+     &__container {
+         margin: 0 auto;
+         padding: 0px 20px;
+         min-width: 320px;
+         
+     //mobile screen
+     @media screen and (min-width: 480px) {
+         width: 320px;
+     }
+      //tablet screen
+     @media screen and (min-width: 768px) {
+         width: 768px;
+         padding: 0px 32px;
+     }
+     //desktop screen
+     @media screen and (min-width: 1200px) {
+         width: 1200px;
+         padding-left: 93px;
+         padding-right: 94px;
+     }
+     }
+
+     &__thumb {
+        border-radius: 8px;
+        overflow: hidden;
+
+        //tablet screen
+    @media screen and (min-width: 768px) {
+        border-radius: 18px;
+    }
+       //desktop screen
+    @media screen and (min-width: 1200px) {
+        border-radius: 24px;
+    }
+     }
+
+     &__card {
+         width: 280px;
+ 
+         @media screen and (min-width: 768px) {
+             width: 704px;
+           }
+           @media screen and (min-width: 1200px) {
+             width: 1013px;
+           }  
+         } 
+     }

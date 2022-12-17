@@ -1,0 +1,80 @@
+.nav-menu {
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  overflow-y: scroll;
+  transition: transform getAnim(time) getAnim(func);
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  @media screen and (max-width: 767.5px) {
+    top: 60px;
+    background-color: getBgColor(main-green);
+    padding: 39px 32px 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    background-color: getBgColor(second-green);
+    padding: 20px 32px 64px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.navigation {
+  font-weight: 700;
+
+  @media screen and (max-width: 767.5px) {
+    font-size: 32px;
+    line-height: 1.22;
+
+    margin-bottom: 110px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.23;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767.5px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    color: getColor(primary-light);
+    transition: color getAnim(time) getAnim(func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor(primary-dark);
+  }
+}
+
+.upper {
+  margin-bottom: 76px;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

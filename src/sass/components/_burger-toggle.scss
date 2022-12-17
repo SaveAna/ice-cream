@@ -1,0 +1,32 @@
+.burger-toggle {
+  transition: transform 500ms getAnim(func), color getAnim(time) getAnim(func);
+  z-index: 10;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor(accent);
+  }
+
+  &:active {
+    transform: scale(1.5);
+    transition: transform 500ms getAnim(func);
+  }
+
+  .cross {
+    display: none;
+  }
+
+  &--enabled {
+    .cross {
+      display: block;
+    }
+
+    .burger {
+      display: none;
+    }
+  }
+}
