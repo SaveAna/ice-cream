@@ -91,10 +91,14 @@
     content: " ";
     height: 50px;
     width: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 16px;
-
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    border-radius: 50%;
+    background-color: getColor(accent);
+   
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
     }
