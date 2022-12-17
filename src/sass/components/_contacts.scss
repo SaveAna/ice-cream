@@ -1,22 +1,26 @@
 .contacts {
-  position: relative;
-  top: 1080px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  // top: 1080px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 20px;
-    padding-bottom: 30px;
+    // padding-top: 20px;
+    // padding-bottom: 30px;
+    top: 133%;
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    top: 340px;
+    // padding-top: 40px;
+    // padding-bottom: 20px;
+
+    top: 101%;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    top: 580px;
+    // padding-top: 50px;
+    // padding-bottom: 60px;
+    top: 118%;
   }
 }
 
