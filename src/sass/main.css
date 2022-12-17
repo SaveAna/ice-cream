@@ -1396,23 +1396,6 @@ button {
   visibility: visible;
 }
 
-.locations-modal,
-.franchise-modal {
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 60px;
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #fcfcfc;
-}
-@media screen and (max-width: 767px) {
-  .locations-modal,
-.franchise-modal {
-    padding: 28px;
-  }
-}
-
 .locations-modal {
   width: 568px;
   height: 458px;
@@ -1432,7 +1415,24 @@ button {
 @media screen and (max-width: 767px) {
   .franchise-modal {
     width: 280px;
-    height: 100%;
+    height: 710px;
+  }
+}
+
+.locations-modal,
+.franchise-modal {
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 32px 60px;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fcfcfc;
+}
+@media screen and (max-width: 767px) {
+  .locations-modal,
+.franchise-modal {
+    padding: 28px;
   }
 }
 
@@ -1444,8 +1444,9 @@ button {
   border: none;
   background-color: transparent;
 }
+
 @media screen and (max-width: 767px) {
-  .modal__cross {
+  .modal__svg {
     width: 20px;
     height: 20px;
   }
