@@ -87,6 +87,7 @@
   height: 43px;
   border-radius: 50%;
   background-color: getBgColor(about-info);
+  box-shadow: getShadow(prod-green);
   font-weight: 500;
   font-size: 10px;
   line-height: calc(28 / 10);
@@ -96,6 +97,8 @@
   top: -2;
   transform: translateX(-50%);
   @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
     font-size: 12px;
     line-height: calc(28 / 12);
   }
