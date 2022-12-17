@@ -130,6 +130,11 @@
 }
 
 .header__list {
+    display: flex;
+    gap: 28px;
+}
+
+/* Коміт */
   display: flex;
   gap: 28px;
 }
