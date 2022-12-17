@@ -22,13 +22,6 @@
     refs.toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
   }
 
-  // function closeMenu() {
-  //   refs.menu.classList.toggle('nav-menu--open');
-  //   refs.toggleMenuBtn.classList.toggle('burger-toggle--enabled');
-  //   refs.scroll.classList.toggle('scroll-hidden');
-  //   refs.toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-  // }
-
   window.matchMedia('(min-width: 1200px)').addEventListener('change', e => {
     if (!e.matches) return;
     refs.menu.classList.remove('menu--open');
@@ -37,15 +30,3 @@
     refs.toggleMenuBtn.setAttribute('aria-expanded', false);
   });
 })();
-
-// -----------
-// $(document).ready(function () {
-//   $('#menu').on('click', 'a', function (event) {
-//     event.preventDefault();
-
-//     var id = $(this).attr('href'),
-//       top = $(id).offset().top;
-
-//     $('body,html').animate({ scrollTop: top }, 1500);
-//   });
-// });
