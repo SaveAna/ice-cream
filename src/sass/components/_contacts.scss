@@ -1,8 +1,8 @@
 .contacts {
-  //   position: relative;
-  //   top: -360px;
-  //
-  @media screen and (max-width: 7670px) {
+  position: relative;
+  top: 1130px;
+
+  @media screen and (max-width: 767px) {
     padding-top: 20px;
     padding-bottom: 30px;
   }
@@ -10,11 +10,13 @@
   @media screen and (min-width: 768px) {
     padding-top: 40px;
     padding-bottom: 20px;
+    top: 340px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 60px;
+    top: 580px;
   }
 }
 
