@@ -48,6 +48,8 @@ border-radius: 10px;
     position: absolute;
   top: 12px;
   right: 12px;
+  padding: 0;
+
   fill: getColor('primary-dark');
   border: none;
   background-color: transparent;
@@ -75,6 +77,8 @@ border-radius: 10px;
 }
 
 .modal-about__video {
+border-radius: 10px;
+
     @media screen and (max-width: 767px) {
     width: 224px;
     height: 199px;
