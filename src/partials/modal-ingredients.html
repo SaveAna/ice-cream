@@ -1,0 +1,81 @@
+<div class="modal ingredients__modal" data-modal="5">
+  <button class="products-modal__close js-modal-close" type="button">
+    <svg width="20" height="20" class="products-modal__icon-close">
+      <use href="./images/svg/symbol-defs.svg#close-black"></use>
+    </svg>
+  </button>
+  <p class="ingredients__title">Chololate icecream</p>
+  <div class="ingredients__circle"></div>
+  <ul class="compounds">
+    <li class="compounds__item">
+      <div class="compounds__value">320</div>
+      <span class="compounds__name">kcal</span>
+    </li>
+    <li class="compounds__item">
+      <div class="compounds__value">4g</div>
+      <span class="compounds__name compounds__name--mobile">Prote...</span>
+      <span class="compounds__name compounds__name--desk">Protein...</span>
+    </li>
+    <li class="compounds__item">
+      <div class="compounds__value">8,2g</div>
+      <span class="compounds__name">Fats</span>
+    </li>
+    <li class="compounds__item">
+      <div class="compounds__value">40,4g</div>
+      <span class="compounds__name">Carbs</span>
+    </li>
+  </ul>
+
+  <p class="ingredients__label">Ingredients</p>
+  <ul class="ingredients">
+    <li class="ingredients__item"><span>Milk</span><span>100ml</span></li>
+    <li class="ingredients__item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="ingredients__item"><span>Cream</span><span>150 ml</span></li>
+    <li class="ingredients__item">
+      <span>Cocoa powder</span><span> 30g</span>
+    </li>
+    <li class="ingredients__item"><span>Sugar</span><span>40g</span></li>
+    <li class="ingredients__item">
+      <span>Vanilla sugar</span><span>10g</span>
+    </li>
+  </ul>
+  <form action="" class="ingredients-form">
+    <ul class="ingredients-form__list">
+      <li class="ingredients-form__item">
+        <input
+          class="ingredients-form__input"
+          type="text"
+          id="name-area"
+          name="name"
+          placeholder=" "
+        />
+        <label class="ingredients-form__label" for="name-area">Name</label>
+      </li>
+      <li class="ingredients-form__item">
+        <input
+          class="ingredients-form__input"
+          type="tel"
+          id="phone-area"
+          name="phone"
+          placeholder=" "
+        />
+        <label class="ingredients-form__label" for="phone-area">Phone</label>
+      </li>
+      <li class="ingredients-form__item">
+        <textarea
+          class="ingredients-form__input ingredients-form__input--comment"
+          id="comment-area"
+          name="comment"
+          placeholder=" "
+          rows="3"
+        ></textarea>
+        <label class="ingredients-form__label" for="comment-area"
+          >Comment</label
+        >
+      </li>
+    </ul>
+    <button type="button" class="ingredients-form__btn">Submit</button>
+  </form>
+</div>

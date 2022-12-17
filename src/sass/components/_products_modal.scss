@@ -1,6 +1,4 @@
 .products-modal__window {
-  // display: none;
-  position: absolute;
   width: 280px;
   height: 991px;
   padding: 28px 28px 29px 28px;
@@ -99,6 +97,11 @@
     background-size: cover;
     width: 132px;
     height: 132px;
+   @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet-mobile/1/1_400.png);
+    }
   }
 }
 
@@ -116,6 +119,11 @@
     background-size: cover;
     width: 132px;
     height: 132px;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet-mobile/3/3_400.png);
+    }
   }
 }
 
@@ -133,6 +141,11 @@
     background-size: cover;
     width: 132px;
     height: 132px;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/tablet-mobile/2/2_400.png);
+    }
   }
 }
 
