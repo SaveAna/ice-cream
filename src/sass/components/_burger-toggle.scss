@@ -1,10 +1,14 @@
 .burger-toggle {
-  transition: transform 500ms getAnim(func), fill getAnim(time) getAnim(func);
+  transition: transform 500ms getAnim(func), color getAnim(time) getAnim(func);
   z-index: 10;
+
+  &__icon {
+    fill: currentColor;
+  }
 
   &:hover,
   &:focus {
-    fill: getColor(accent);
+    color: getColor(accent);
   }
 
   &:active {
