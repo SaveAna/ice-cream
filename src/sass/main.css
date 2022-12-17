@@ -1066,6 +1066,13 @@ button {
   border: 2px solid #f8d24e;
   border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+  .products-modal__window {
+    width: 568px;
+    height: 644px;
+    padding: 32px 54px;
+  }
+}
 
 .products-modal {
   margin-bottom: 32px;
@@ -1073,6 +1080,13 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .products-modal {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
 }
 
 .products-modal__title {
@@ -1083,6 +1097,12 @@ button {
   line-height: 1.5;
   margin-bottom: 83px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .products-modal__title {
+    font-size: 20px;
+    margin-bottom: 103px;
+  }
 }
 
 .products-modal__item {
@@ -1110,6 +1130,11 @@ button {
 }
 .products-modal__item--coral {
   border: 2px solid #d6936d;
+}
+@media screen and (min-width: 768px) {
+  .products-modal__item {
+    margin-bottom: 0;
+  }
 }
 
 .products-modal__circle {
@@ -1189,7 +1214,6 @@ button {
   background: rgba(248, 210, 78, 0.1);
   height: 32px;
   width: 100%;
-  margin-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
   font-family: inherit;
@@ -1199,9 +1223,15 @@ button {
   resize: none;
 }
 .products-form__input--comment {
-  margin-bottom: 0;
   height: 65px;
   padding-top: 8px;
+}
+.products-form__input:focus {
+  border-color: #f8d24e;
+  outline: none;
+}
+.products-form__input:focus + .products-form__label {
+  display: none;
 }
 .products-form__input:not(:-moz-placeholder-shown) + .products-form__label {
   display: none;
@@ -1212,9 +1242,28 @@ button {
 .products-form__input:not(:placeholder-shown) + .products-form__label {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .products-form__input {
+    height: 42px;
+    padding: 11px 16px;
+    width: 368px;
+  }
+  .products-form__input--comment {
+    height: 84px;
+  }
+}
 
 .products-form__item {
   position: relative;
+  margin-bottom: 12px;
+}
+.products-form__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .products-form__item {
+    margin-bottom: 16px;
+  }
 }
 
 .products-form__label {
@@ -1224,9 +1273,19 @@ button {
   font-size: 12px;
   line-height: 1.4;
 }
+@media screen and (min-width: 768px) {
+  .products-form__label {
+    font-size: 14px;
+  }
+}
 
 .products-form__list {
   margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .products-form__list {
+    margin-bottom: 32px;
+  }
 }
 
 .products-form__btn {
@@ -1239,6 +1298,7 @@ button {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products-form__btn:hover {
   background-color: #0a8817;
@@ -1246,6 +1306,12 @@ button {
 .products-form__btn:focus {
   background-color: #0a8817;
   color: #fcfcfc;
+}
+@media screen and (min-width: 768px) {
+  .products-form__btn {
+    width: 121px;
+    font-size: 14px;
+  }
 }
 
 .products-form {
@@ -1265,6 +1331,14 @@ button {
   background-color: inherit;
   top: 12;
   right: 12;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .products-modal__icon-close {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .about__container {
@@ -1867,12 +1941,12 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 7670px) {
+@media screen and (max-width: 767.5px) {
   .background {
     background-image: url("../images/background/mobile/background_mobile_885.png");
   }
 }
-@media screen and (max-width: 7670px) and (min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 7670px) and (min-resolution: 192dpi), screen and (max-width: 7670px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767.5px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.5px) and (min-resolution: 192dpi), screen and (max-width: 767.5px) and (min-resolution: 2dppx) {
   .background {
     background-image: url("../images/background/mobile/background_mobile_1770.png");
   }
