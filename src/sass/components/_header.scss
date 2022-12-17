@@ -81,17 +81,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #0a8817;
+    background-color: getColor(active-green);
   }
 
   &:focus {
-    background-color: #0a8817;
+    background-color: getColor(active-green);
     color: getColor(primary-white);
-    fill: #fff;
+    fill: getColor(primary-white);
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: getColor(grey);
   }
 
   @media screen and (max-width: 767px) {
@@ -117,14 +117,14 @@
         font-weight: 700;
         font-size: 16px;
         line-height: calc(20 / 16);
-        color: #FCFCFC;
+        color: getColor(primary-light);
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: #F8D24E;
+            color: getColor(accent);
         }
 }
 
