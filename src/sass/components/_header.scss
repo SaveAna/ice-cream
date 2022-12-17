@@ -17,12 +17,6 @@
     width: 100wv;
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .header__mobile {
@@ -67,7 +61,7 @@
   text-align: center;
   justify-content: center;
   gap: 8px;
-  background-color: #f8d24e;
+  background-color: getColor(accent);
   width: 152px;
   height: 42px;
   border-radius: 10px;
@@ -77,17 +71,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #0a8817;
+    background-color: getColor(active-green);
   }
 
   &:focus {
-    background-color: #0a8817;
-    color: #fff;
-    fill: #fff;
+    background-color: getColor(active-green);
+    color: getColor(primary-white);
+    fill: getColor(primary-white);
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: getColor(grey);
   }
 
   @media screen and (max-width: 767px) {
