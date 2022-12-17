@@ -7,6 +7,11 @@
   background-color: getColor(primary-light);
   border: 2px solid getColor(accent);
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 644px;
+    padding: 32px 54px;
+  }
 }
 .products-modal {
   margin-bottom: 32px;
@@ -14,6 +19,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
 }
 
 .products-modal__title {
@@ -24,6 +34,10 @@
   line-height: calc(24 / 16);
   margin-bottom: 83px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 103px;
+  }
 }
 
 .products-modal__item {
@@ -54,6 +68,9 @@
 
   &--coral {
     border: getBorder(prod-coral);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -135,7 +152,6 @@
   background: rgba(248, 210, 78, 0.1);
   height: 32px;
   width: 100%;
-  margin-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px;
   font-family: inherit;
@@ -144,18 +160,40 @@
   color: inherit;
   resize: none;
   &--comment {
-    margin-bottom: 0;
     height: 65px;
     padding-top: 8px;
+  }
+&:focus {
+  border-color: getColor(accent);
+  outline: none;
+}
+  &:focus + .products-form__label {
+    display: none;
   }
 
   &:not(:placeholder-shown) + .products-form__label {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    height: 42px;
+    padding: 11px 16px;
+    width: 368px;
+    &--comment {
+      height: 84px;
+    }
+  }
 }
 
 .products-form__item {
   position: relative;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 .products-form__label {
   position: absolute;
@@ -163,10 +201,16 @@
   left: 12;
   font-size: 12px;
   line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .products-form__list {
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .products-form__btn {
@@ -179,12 +223,17 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  transition: background-color getAnim(time) getAnim(func);
   &:hover {
     background-color: getColor(active-green);
   }
   &:focus {
     background-color: getColor(active-green);
     color: getColor(primary-light);
+  }
+  @media screen and (min-width: 768px) {
+    width: 121px;
+    font-size: 14px;
   }
 }
 
@@ -205,4 +254,12 @@
   background-color: inherit;
   top: 12;
   right: 12;
+  padding: 0;
+}
+
+.products-modal__icon-close {
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
