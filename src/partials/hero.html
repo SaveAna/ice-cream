@@ -6,8 +6,8 @@
           ice cream made with <span class="hero__title-part">passion</span>
         </h1>
         <ul class="hero__link-list">
-          <li><a class="hero__products-link">Products</a></li>
-          <li><a class="hero__made-link">How it’s made?</a></li>
+          <li><a class="hero__products-link" href="#products">Products</a></li>
+          <li><a class="hero__made-link" href="#about">How it’s made?</a></li>
         </ul>
       </div>
       <ul class="hero__benefits">
@@ -22,27 +22,30 @@
       </ul>
     </div>
 
-    <p class="hero__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-
-      <svg class="hero__text-arrow" width="40" height="16">
-        <use href="./images/svg/symbol-defs.svg#arrow"></use>
-      </svg>
-    </p>
+    <div class="hero__text-box">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button class="hero__text-button">
+        <svg class="hero__text-arrow" width="40" height="16">
+          <use href="./images/svg/symbol-defs.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
 
     <img
       srcset="
-        ./images/hero/hero-fun-ice-cream/mobile/mobile_177.png  177w,
+        ./images/hero/hero-fun-ice-cream/mobile/mobile@1x.png   177w,
         ./images/hero/hero-fun-ice-cream/tablet/tablet@1x.png   268w,
         ./images/hero/hero-fun-ice-cream/desktop/desktop@1x.png 456w,
-        ./images/hero/hero-fun-ice-cream/mobile/mobile_354.png  354w,
+        ./images/hero/hero-fun-ice-cream/mobile/mobile@2x.png   354w,
         ./images/hero/hero-fun-ice-cream/tablet/tablet@2x.png   536w,
         ./images/hero/hero-fun-ice-cream/desktop/desktop@2x.png 912w
       "
       sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 320px) 177px, 100vw"
       class="hero__fun-ice"
-      src="./images/hero/hero-fun-ice-cream/mobile/mobile_177.png"
+      src="./images/hero/hero-fun-ice-cream/mobile/mobile@1x.png"
       alt="ice-cream plate"
     />
     <img
