@@ -2056,27 +2056,6 @@ textarea {
   }
 }
 
-.burger-toggle {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10;
-}
-.burger-toggle:hover, .burger-toggle:focus {
-  fill: #f8d24e;
-}
-.burger-toggle:active {
-  transform: scale(1.5);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.burger-toggle .cross {
-  display: none;
-}
-.burger-toggle--enabled .cross {
-  display: block;
-}
-.burger-toggle--enabled .burger {
-  display: none;
-}
-
 @media screen and (max-width: 767.5px) {
   .nav-button {
     display: flex;
