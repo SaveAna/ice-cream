@@ -1804,8 +1804,8 @@ textarea {
   position: relative;
   width: 568px;
   padding: 32px 60px;
-  background-color: #FCFCFC;
-  border: 2px solid #F8D24E;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
   border-radius: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -1822,6 +1822,13 @@ textarea {
   fill: #131313;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-window__svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .modal-about__title {
@@ -1843,7 +1850,7 @@ textarea {
   margin-top: 32px;
   padding: 85px 98px;
   border-radius: 10px;
-  fill: #fff;
+  fill: #ffffff;
   background-color: #000000;
 }
 @media screen and (max-width: 767px) {

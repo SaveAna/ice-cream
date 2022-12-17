@@ -35,8 +35,8 @@
     width: 568px;
     padding: 32px 60px;
 
-    background-color: #FCFCFC;
-border: 2px solid #F8D24E;
+    background-color: getColor('primary-light');
+border: 2px solid getColor('accent');
 border-radius: 10px;
 
      @media screen and (max-width: 767px) {
@@ -49,9 +49,16 @@ border-radius: 10px;
     position: absolute;
   top: 12px;
   right: 12px;
-  fill: getColor(primary-dark);
+  fill: getColor('primary-dark');
   border: none;
   background-color: transparent;
+}
+
+.modal-window__svg {
+    @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .modal-about__title {
@@ -72,8 +79,8 @@ border-radius: 10px;
     margin-top: 32px;
     padding: 85px 98px;
     border-radius: 10px;
-    fill: #fff;
-    background-color: #000000;
+    fill: getColor('primary-white');
+    background-color: getColor('primary-black');
 
     @media screen and (max-width: 767px) {
     width: 224px;
@@ -88,7 +95,7 @@ width: 448px;
 font-family: 'Montserrat';
 font-size: 16px;
 line-height: calc(22 / 16);
-color: #131313;
+color: getColor('primary-dark');
 
 @media screen and (max-width: 767px) {
 font-size: 14px;
