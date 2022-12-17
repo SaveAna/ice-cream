@@ -1870,9 +1870,9 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .modal-about__text {
+    width: 224px;
     font-size: 14px;
     line-height: 1.4285714286;
-    width: 224px;
   }
 }
 
