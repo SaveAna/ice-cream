@@ -98,8 +98,9 @@ line-height: calc(22 / 16);
 color: getColor('primary-dark');
 
 @media screen and (max-width: 767px) {
+width: 224px;
+
 font-size: 14px;
 line-height: calc(20 / 14);
-width: 224px;
   }
 }
