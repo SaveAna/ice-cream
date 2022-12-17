@@ -14,17 +14,17 @@
     transform: translateX(0);
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 767.5px) {
     top: 60px;
     background-color: getBgColor(main-green);
     padding: 39px 32px 64px;
     height: 568px;
   }
 
-  @media screen and (min-width: 551px) {
+  @media screen and (min-width: 768px) {
     top: 0;
     background-color: getBgColor(second-green);
-    padding: 56px 32px 64px;
+    padding: 20px 32px 64px;
     height: 1024px;
   }
 
@@ -36,24 +36,24 @@
 .navigation {
   font-weight: 700;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 767.5px) {
     font-size: 32px;
     line-height: 1.22;
 
     margin-bottom: 110px;
   }
 
-  @media screen and (min-width: 551px) {
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.23;
   }
 
   &__item:not(:last-child) {
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 767.5px) {
       margin-bottom: 32px;
     }
 
-    @media screen and (min-width: 551px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 40px;
     }
   }
@@ -70,8 +70,14 @@
 }
 
 .upper {
-  @media screen and (max-width: 550px) {
+  margin-bottom: 76px;
+  @media screen and (max-width: 767.5px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
