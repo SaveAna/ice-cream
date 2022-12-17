@@ -1,5 +1,5 @@
 .nav-menu {
-  z-index: 10;
+  z-index: 10000;
   position: fixed;
   left: 0;
 
@@ -18,14 +18,12 @@
     top: 60px;
     background-color: getBgColor(main-green);
     padding: 39px 32px 64px;
-    height: 568px;
   }
 
   @media screen and (min-width: 768px) {
     top: 0;
     background-color: getBgColor(second-green);
     padding: 20px 32px 64px;
-    height: 1024px;
   }
 
   @media screen and (min-width: 1200px) {
