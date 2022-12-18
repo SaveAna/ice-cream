@@ -1,6 +1,7 @@
 .ingredients__modal {
   width: 280px;
   height: 968px;
+  // height: 95%;
   background-color: getColor(primary-light);
   border: 2px solid getColor(accent);
   border-radius: 10px;
@@ -175,7 +176,7 @@
     display: none;
   }
 
-  &:not(:placeholder-shown) + .ingredients-form__label {
+  &:not(:placeholder-shown)  .ingredients-form__label {
     display: none;
   }
 

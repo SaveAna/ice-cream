@@ -193,7 +193,7 @@
     display: none;
   }
 
-  &:not(:placeholder-shown) + .products-form__label {
+  &:not(:placeholder-shown)  .products-form__label {
     display: none;
   }
 
