@@ -306,29 +306,29 @@ button {
 }
 
 .advantages-list__tittle--first::before {
-  background-image: url(/src/images/advantages/cow/cow_50.png);
+  background-image: url(/src/images/svg/cow.svg);
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages-list__tittle--first::before {
-    background-image: url(/src/images/advantages/cow/cow_100.png);
+    background-image: url(/src/images/svg/cow.svg);
   }
 }
 
 .advantages-list__tittle--second::before {
-  background-image: url(/src/images/advantages/weight/weight_50.png);
+  background-image: url(/src/images/svg/weight.svg);
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages-list__tittle--second::before {
-    background-image: url(/src/images/advantages/weight/weight_100.png);
+    background-image: url(/src/images/svg/weight.svg);
   }
 }
 
 .advantages-list__tittle--third::before {
-  background-image: url(/src/images/advantages/ice/ice_50.png);
+  background-image: url(/src/images/svg/ice-crema.svg);
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages-list__tittle--third::before {
-    background-image: url(/src/images/advantages/ice/ice_100.png);
+    background-image: url(/src/images/svg/ice-crema.svg);
   }
 }
 
