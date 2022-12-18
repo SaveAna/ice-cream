@@ -1,4 +1,11 @@
 .burger-toggle {
+  color: getColor(primary-white);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
   transition: transform 500ms getAnim(func), color getAnim(time) getAnim(func);
   z-index: 10;
 
@@ -14,6 +21,16 @@
   &:active {
     transform: scale(1.5);
     transition: transform 500ms getAnim(func);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 440px;
+    justify-content: center;
+    align-items: center;
   }
 
   .cross {
