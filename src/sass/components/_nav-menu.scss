@@ -58,12 +58,13 @@
 
   &__link {
     color: getColor(primary-light);
-    transition: color getAnim(time) getAnim(func);
+    transition: color getAnim(time) getAnim(func), transform 500ms getAnim(func);
   }
 
   &__link:hover,
   &__link:focus {
     color: getColor(primary-dark);
+    transform: scale(1.1);
   }
 }
 
