@@ -1,28 +1,17 @@
 <header class="container header">
   <div class="header__mobile">
     <a href="./"
-      ><img
-        class="logo"
-        srcset="
-          images/logo/mobile/logo_40.png    40w,
-          images/logo/tablet/logo_48.png    48w,
-          images/logo/desktop/logo_60.png   60w,
-          images/logo/mobile/logo_80.png    80w,
-          images/logo/tablet/logo_96.png    96w,
-          images/logo/desktop/logo_120.png 120w
-        "
-        src="./images/logo/mobile/logo_40.png"
-        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
-        alt="logo-ice-cream"
-      />
+      ><svg class="logo-mobile" width="" height="">
+        <use href="./images/svg/symbol-defs.svg#logo-mobile"></use>
+      </svg>
     </a>
 
     <button
       toggle
       class="burger burger-toggle"
       aria-label="open menu"
-      aria-expanded="false">
-      
+      aria-expanded="false"
+    >
       <svg class="" width="32" height="32">
         <use class="burger" href="./images/svg/symbol-defs.svg#burger1"></use>
         <use
