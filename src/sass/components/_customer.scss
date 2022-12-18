@@ -35,9 +35,7 @@ body {
 .swiper-slide {
    display: flex;
    flex-direction: column;
-
-    gap: 32px;
-
+   
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,15 +49,15 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-      
+    gap: 32px;
 }
 
-.swiper-slide img {
+.swiper-image {
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
     width: 85px;
     height: 85px;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .swiper-text {
