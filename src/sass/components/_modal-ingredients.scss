@@ -175,7 +175,7 @@
     display: none;
   }
 
-  &:not(:placeholder-shown) + .ingredients-form__label {
+  &:not(:placeholder-shown)  .ingredients-form__label {
     display: none;
   }
 
