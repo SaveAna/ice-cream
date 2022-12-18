@@ -1,20 +1,25 @@
 <section class="gallery">
     <div class="gallery__container">
         <h2 class="gallery__title visually-hidden">Gallery</h2>
-        <div class="gallery__thumb swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="swiper__card"
+        <div class="gallery__thumb">
+          <div class="swiper gallery__swiper">
+                <div class="swiper-wrapper gallery__wrapper">
+                  <div class="swiper-slide gallery__slide">
+                    <img class="gallery__card"
                         srcset="
+                        ./images/gallery/main-ice/mobile/main-ice_280.jpg 280w,
+                        ./images/gallery/main-ice/mobile/main-ice_560.jpg 560w,
+                        ./images/gallery/main-ice/tablet/main-ice_704.jpg 704w,
                         ./images/gallery/main-ice/desktop/gallery-main_1013.jpg 1013w,
+                        ./images/gallery/main-ice/tablet/main-ice_1408.jpg 1408w,
                         ./images/gallery/main-ice/desktop/gallery-main_2026.jpg 2026w
                         "
-                        sizes="(min-width: 1200px) 1013px"
+                        sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, (min-width: 480px) 280px, 100vw"
                         src="./images/gallery/main-ice/desktop/gallery-main_1013.jpg" 
                         alt="ice card 1">
                   </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__card"
+                  <div class="swiper-slide gallery__slide">
+                    <img class="gallery__card"
                         srcset="
                         ./images/gallery/slide2/ice-gallery-changed_1013.jpg 1013w,
                         ./images/gallery/slide2/ice-gallery-changed_2026.jpg 2026w
@@ -23,8 +28,8 @@
                         src="./images/gallery/slide2/ice-gallery-changed_1013.jpg" 
                         alt="ice card 2">
                   </div>
-                  <div class="swiper-slide">
-                    <img class="swiper__card"
+                  <div class="swiper-slide gallery__slide">
+                    <img class="gallery__card"
                         srcset="
                         ./images/gallery/slide3/changed_1013.jpg 1013w,
                         ./images/gallery/slide3/changed_2026.jpg 2026w
@@ -34,6 +39,7 @@
                         alt="ice card 3">
                   </div>
                 </div>
+            </div>
         </div>
         <!-- <div class="gallery__thumb">
             <img class="gallery__card"
