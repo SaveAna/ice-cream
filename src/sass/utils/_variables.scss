@@ -22,18 +22,15 @@ $bg-colors: (
   'second-green': #97af8d,
   'prod-green': #aec6a5,
   'prod-yellow': #efd478,
-  'green-circle': (
-    linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+  'pagination': #d9d9d9,
+  'green-circle': (linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
     #d9d9d9,
   ),
   //   similar in about-circle
-  'yellow-circle':
-    (
-      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-      #d9d9d9,
-    ),
-  'coral-circle': (
-    linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+  'yellow-circle': (linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+    #d9d9d9,
+  ),
+  'coral-circle': (linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
     #d9d9d9,
   ),
   'menu-input': #f8d24e1a,
@@ -45,59 +42,45 @@ $bg-colors: (
 }
 
 $shadows: (
-  'prod-card': (
-    0px 8px 30px 0px #d414431a,
+  'prod-card': (0px 8px 30px 0px #d414431a,
   ),
   //   similar in about-info
-  'prod-green':
-    (
-      0px 8px 30px 0px #0a881740,
-    ),
-  //   similar in about-circle
-  'prod-yellow':
-    (
-      0px 8px 30px 0px #99721740,
-    ),
-  'prod-coral': (
-    0px 8px 30px 0px #00000040,
+  'prod-green': (0px 8px 30px 0px #0a881740,
   ),
-  'contacts': (
-    0px 8px 30px 0px #d414431a,
+  //   similar in about-circle
+  'prod-yellow': (0px 8px 30px 0px #99721740,
+  ),
+  'prod-coral': (0px 8px 30px 0px #00000040,
+  ),
+  'contacts': (0px 8px 30px 0px #d414431a,
   ),
 );
+
 @function getShadow($var) {
   @return map-get($shadows, $var);
 }
 
 $borders: (
-  'footer': (
-    1px solid #e1e1e1,
+  'footer': (1px solid #e1e1e1,
   ),
-  'button-default': (
-    2px solid #f8d24e,
+  'button-default': (2px solid #f8d24e,
   ),
-  'button-active': (
-    2px solid #0a8817,
+  'button-active': (2px solid #0a8817,
   ),
-  'button-disabled': (
-    2px solid #ababab,
+  'button-disabled': (2px solid #ababab,
   ),
-  'prod-green': (
-    2px solid #96af8c,
+  'prod-green': (2px solid #96af8c,
   ),
-  'prod-yellow': (
-    2px solid #efd478,
+  'prod-yellow': (2px solid #efd478,
   ),
-  'prod-coral': (
-    2px solid #d6936d,
+  'prod-coral': (2px solid #d6936d,
   ),
-  'menu-input': (
-    1px solid #84a178,
+  'menu-input': (1px solid #84a178,
   ),
-  'about-info': (
-    2px solid #9cbe8f,
+  'about-info': (2px solid #9cbe8f,
   ),
 );
+
 @function getBorder($var) {
   @return map-get($borders, $var);
 }
