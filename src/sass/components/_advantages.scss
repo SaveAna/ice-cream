@@ -78,55 +78,17 @@
   }
 }
 
-.advantages-list__tittle::before {
-  content: ' ';
-  height: 50px;
+
+.icon-advantages{
+  display: block;
+  padding: 7px;
   width: 50px;
-  margin-bottom: 16px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border-radius: 50%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
   background-color: getColor(accent);
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
-  }
-}
-
-.advantages-list__tittle--first::before {
-  background-image: url(/src/images/svg/cow.svg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/svg/cow.svg);
-  }
-}
-
-.advantages-list__tittle--second::before {
-  background-image: url(/src/images/svg/weight.svg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/svg/weight.svg);
-  }
-}
-
-.advantages-list__tittle--third::before {
-  background-image: url(/src/images/svg/ice-crema.svg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/svg/ice-crema.svg);
-  }
+  border-radius: 50%;
 }
 
 .advantages-list__description {
