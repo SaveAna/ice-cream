@@ -13,7 +13,7 @@
   gap: 4px;
   align-items: center;
   text-align: center;
-  transition: 250ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: getColor(active-green);
@@ -37,15 +37,14 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
+  color: #000000;
 
   display: flex;
   gap: 4px;
   align-items: center;
   text-align: center;
 
-  color: #000000;
-
-  transition: 250ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border-color: getColor(active-green);
@@ -89,5 +88,5 @@
 }
 
 .button__icon {
-  transition: 250ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
