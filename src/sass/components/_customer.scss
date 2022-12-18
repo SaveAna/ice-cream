@@ -3,7 +3,6 @@ body {
     position: relative;
     height: 100%;
 }
-
 .customers__swiper {
     padding-top: 178px;
     padding-bottom: 393px;
@@ -26,13 +25,16 @@ body {
     align-items: center;
     gap: 32px;
 
-    // height: 466px;
-    // @media screen and (min-width:768px) {
-    //     height: 356px;
-    //     }
-    //     @media screen and (min-width:1200px) {
-    //     height: 361px;
-    //     }
+}
+
+.swiper-content {
+    height: 478px;
+        @media screen and (min-width:768px) {
+        height: 388px;
+    }
+    @media screen and (min-width:1200px) {
+        height: 393px;
+    }
 }
 
 .swiper {
@@ -99,12 +101,9 @@ body {
     }
 
 }
-
-.swiper-pagination {
-    position: absolute;
-    left: 30px;
-}
-
+.swiper .swiper-pagination {
+    bottom:0;
+    }
 .swiper-pagination-bullet {
 
     width: 12px;
