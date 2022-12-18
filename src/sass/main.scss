@@ -10,9 +10,7 @@
 @import './components/footer';
 // products
 @import './components/products';
-@import './components/products_modal';
 @import './components/about';
-@import './components/modal-ingredients';
 
 // bacdrop-modal
 @import './components/backdrop-modal';
@@ -33,3 +31,8 @@
 @import './components/customer';
 // modal about
 @import './components/modal-about';
+
+// ingredients modal 
+@import './components/modal-ingredients';
+@import './components/products_modal';
+

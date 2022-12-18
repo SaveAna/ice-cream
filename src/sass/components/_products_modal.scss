@@ -5,10 +5,19 @@
   background-color: getColor(primary-light);
   border: 2px solid getColor(accent);
   border-radius: 10px;
+  overflow-y: scroll;
+  top: 0;
+  transform: translateX(-50%);
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 644px;
     padding: 32px 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    overflow: hidden;
   }
 }
 .products-modal {
@@ -97,7 +106,7 @@
     background-size: cover;
     width: 132px;
     height: 132px;
-   @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/products/tablet-mobile/1/1_400.png);
@@ -119,7 +128,7 @@
     background-size: cover;
     width: 132px;
     height: 132px;
-      @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/products/tablet-mobile/3/3_400.png);
@@ -141,7 +150,7 @@
     background-size: cover;
     width: 132px;
     height: 132px;
-      @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/products/tablet-mobile/2/2_400.png);
@@ -176,10 +185,10 @@
     height: 65px;
     padding-top: 8px;
   }
-&:focus {
-  border-color: getColor(accent);
-  outline: none;
-}
+  &:focus {
+    border-color: getColor(accent);
+    outline: none;
+  }
   &:focus + .products-form__label {
     display: none;
   }
