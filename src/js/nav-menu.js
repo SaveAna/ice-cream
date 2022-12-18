@@ -1,13 +1,13 @@
 (() => {
   const refs = {
-    toggleMenuBtn: document.querySelector('[toggle]'),
-    closeMenuBtn: document.querySelector('[tablet-cross]'),
-    menu: document.querySelector('[menu]'),
-    scroll: document.querySelector('[scroll]'),
-    anchor_1: document.querySelector('[nav-link1]'),
-    anchor_2: document.querySelector('[nav-link2]'),
-    anchor_3: document.querySelector('[nav-link3]'),
-    butBtn: document.querySelector('[buy-button]'),
+    toggleMenuBtn: document.querySelector('[data-toggle]'),
+    closeMenuBtn: document.querySelector('[data-tablet-cross]'),
+    menu: document.querySelector('[data-menu]'),
+    scroll: document.querySelector('[data-scroll]'),
+    anchor_1: document.querySelector('[data-nav-link1]'),
+    anchor_2: document.querySelector('[data-nav-link2]'),
+    anchor_3: document.querySelector('[data-nav-link3]'),
+    butBtn: document.querySelector('[data-buy-button]'),
   };
 
   refs.toggleMenuBtn.addEventListener('click', toggleMenu);
