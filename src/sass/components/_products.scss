@@ -90,7 +90,6 @@
   }
 }
 
-
 .products__item {
   position: relative;
   display: flex;
@@ -103,6 +102,8 @@
   margin-bottom: 168px;
   background-color: getBgColor(prod-green);
   box-shadow: getShadow(prod-card);
+  transition: transform getAnim(time) getAnim(func),
+    box-shadow getAnim(time) getAnim(func);
   &:nth-child(2) {
     background-color: getBgColor(prod-yellow);
   }
@@ -121,6 +122,11 @@
     flex-basis: calc((100% - 58px) / 3);
     height: 536px;
     padding: 165px 64px 60px 64px;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: rgb(65 65 65 / 50%) 3px 3px 20px,
+        rgb(65 65 65 / 50%) -3px -3px 20px;
+    }
   }
 }
 
