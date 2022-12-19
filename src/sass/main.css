@@ -2121,7 +2121,7 @@ textarea {
 .hero__benefits {
   padding-top: 14px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .hero__benefits {
     display: none;
   }
@@ -2175,7 +2175,7 @@ textarea {
   max-width: 139px;
   margin-left: 184px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .hero__text-box {
     display: none;
   }
