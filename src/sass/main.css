@@ -966,6 +966,7 @@ button:hover {
   margin-bottom: 168px;
   background-color: #aec6a5;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1019607843);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__item:nth-child(2) {
   background-color: #efd478;
@@ -987,6 +988,10 @@ button:hover {
     flex-basis: calc((100% - 58px) / 3);
     height: 536px;
     padding: 165px 64px 60px 64px;
+  }
+  .products__item:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(65, 65, 65, 0.5) 3px 3px 20px, rgba(65, 65, 65, 0.5) -3px -3px 20px;
   }
 }
 
@@ -1806,6 +1811,9 @@ textarea {
 .nav-menu--open {
   transform: translateX(0);
 }
+.nav-menu--open .navigation {
+  opacity: 1;
+}
 @media screen and (max-width: 767.5px) {
   .nav-menu {
     top: 60px;
@@ -1828,6 +1836,8 @@ textarea {
 
 .navigation {
   font-weight: 700;
+  opacity: 0;
+  transition: opacity 500ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767.5px) {
   .navigation {

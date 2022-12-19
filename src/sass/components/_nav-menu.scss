@@ -12,6 +12,9 @@
 
   &--open {
     transform: translateX(0);
+    .navigation {
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 767.5px) {
@@ -33,6 +36,8 @@
 
 .navigation {
   font-weight: 700;
+  opacity: 0;
+  transition: opacity 500ms getAnim(time) getAnim(func);
 
   @media screen and (max-width: 767.5px) {
     font-size: 32px;
