@@ -103,6 +103,7 @@
   margin-bottom: 168px;
   background-color: getBgColor(prod-green);
   box-shadow: getShadow(prod-card);
+  transition: transform getAnim(time) getAnim(func);
   &:nth-child(2) {
     background-color: getBgColor(prod-yellow);
   }
@@ -121,6 +122,9 @@
     flex-basis: calc((100% - 58px) / 3);
     height: 536px;
     padding: 165px 64px 60px 64px;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
