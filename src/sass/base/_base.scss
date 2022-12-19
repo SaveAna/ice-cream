@@ -46,6 +46,11 @@ button {
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (max-width: 319.5px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media screen and (min-width: 320px) {
     width: 320px;
     padding-left: 20px;
