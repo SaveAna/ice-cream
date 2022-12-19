@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './base/base';
+@import './utils/_footer-animations';
 
 /* header */
 @import './components/header';
@@ -32,7 +33,6 @@
 // modal about
 @import './components/modal-about';
 
-// ingredients modal 
+// ingredients modal
 @import './components/modal-ingredients';
 @import './components/products_modal';
-
