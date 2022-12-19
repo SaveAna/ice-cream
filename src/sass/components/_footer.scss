@@ -112,11 +112,12 @@
   fill: getBgColor(main-green);
   border-radius: 50%;
 
-  transition: fill getAnim(time) getAnim(func);
+  transition: all getAnim(time) getAnim(func);
 
   &:hover,
   &:focus {
     fill: getColor(primary-light);
+    transform: scale(1.2);
   }
 }
 
