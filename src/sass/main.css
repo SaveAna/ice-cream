@@ -171,6 +171,7 @@ button:hover {
   font-size: 16px;
   line-height: 1.25;
   color: #fcfcfc;
+  cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -280,53 +281,16 @@ button:hover {
   }
 }
 
-.advantages-list__tittle::before {
-  content: " ";
-  height: 50px;
+.icon-advantages {
+  display: block;
+  padding: 7px;
   width: 50px;
-  margin-bottom: 16px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
   background-color: #f8d24e;
-}
-@media screen and (min-width: 768px) {
-  .advantages-list__tittle::before {
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages-list__tittle::before {
-    margin-bottom: 40px;
-  }
-}
-
-.advantages-list__tittle--first::before {
-  background-image: url(/src/images/svg/cow.svg);
-}
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .advantages-list__tittle--first::before {
-    background-image: url(/src/images/svg/cow.svg);
-  }
-}
-
-.advantages-list__tittle--second::before {
-  background-image: url(/src/images/svg/weight.svg);
-}
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .advantages-list__tittle--second::before {
-    background-image: url(/src/images/svg/weight.svg);
-  }
-}
-
-.advantages-list__tittle--third::before {
-  background-image: url(/src/images/svg/ice-crema.svg);
-}
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .advantages-list__tittle--third::before {
-    background-image: url(/src/images/svg/ice-crema.svg);
-  }
+  border-radius: 50%;
 }
 
 .advantages-list__description {
@@ -1723,35 +1687,36 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 767.5px) {
   .background {
-    background-image: url("../images/background/mobile/background_mobile_885.png");
+    background-image: url("../images/background/mobile/ice-cream-320.png");
   }
 }
 @media screen and (max-width: 767.5px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.5px) and (min-resolution: 192dpi), screen and (max-width: 767.5px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("../images/background/mobile/background_mobile_1770.png");
+    background-image: url("../images/background/mobile/ice-cream-320@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
   .background {
-    background-image: url("../images/background/tablet/background_tablet_963.png");
+    background-image: url("../images/background/tablet/ice-cream-768.png");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("../images/background/tablet/background_tablet_1926.png");
+    background-image: url("../images/background/tablet/ice-cream-768@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .background {
-    background-image: url("../images/background/desktop/background_desktop_1300.png");
+    background-image: url("../images/background/desktop/ice-cream-1200.png");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("../images/background/desktop/background_desktop_2600.png");
+    background-image: url("../images/background/desktop/ice-cream-1200@2x.png");
   }
 }
 
@@ -2238,7 +2203,6 @@ textarea {
   margin: 0 auto;
   background-color: transparent;
   position: absolute;
-  top: -32px;
   right: 50%;
   transform: translateX(50%);
 }
@@ -2280,25 +2244,25 @@ textarea {
     padding-right: 94px;
   }
 }
-.gallery__thumb {
+.gallery__thumb, .gallery__card {
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .gallery__thumb {
+  .gallery__thumb, .gallery__card {
     width: 280px;
     height: 130px;
     border-radius: 8px;
   }
 }
 @media screen and (min-width: 768px) {
-  .gallery__thumb {
+  .gallery__thumb, .gallery__card {
     width: 704px;
     height: 327px;
     border-radius: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery__thumb {
+  .gallery__thumb, .gallery__card {
     width: 1013px;
     height: 422px;
     border-radius: 24px;
@@ -2356,20 +2320,20 @@ body {
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 }
 
-.swiper-slide img {
+.swiper-image {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   width: 85px;
   height: 85px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
 }
 
 .swiper-text {
