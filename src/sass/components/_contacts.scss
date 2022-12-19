@@ -3,7 +3,7 @@
   transform: translate(-50%, -50%);
   left: 50%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     top: 133%;
   }
 
@@ -22,7 +22,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     flex-direction: column;
   }
 
@@ -43,7 +43,7 @@
       -3px -3px 20px rgb(65 65 65 / 50%);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     padding: 40px 32px 24px;
   }
 
@@ -165,7 +165,7 @@
 }
 
 .address__link--width {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     max-width: 190px;
   }
 

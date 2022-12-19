@@ -379,7 +379,7 @@ button:hover {
   transform: translate(-50%, -50%);
   left: 50%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .contacts {
     top: 133%;
   }
@@ -401,7 +401,7 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .contacts__list {
     flex-direction: column;
   }
@@ -422,7 +422,7 @@ button:hover {
 .contacts__item:hover {
   box-shadow: 3px 3px 20px rgba(65, 65, 65, 0.5), -3px -3px 20px rgba(65, 65, 65, 0.5);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .contacts__item {
     padding: 40px 32px 24px;
   }
@@ -552,7 +552,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .address__link--width {
     max-width: 190px;
   }
@@ -1748,7 +1748,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .button__item {
     margin-left: auto;
     margin-right: auto;
@@ -1982,6 +1982,9 @@ textarea {
   }
 }
 
+.hero__title-for-animation {
+  margin-bottom: 32px;
+}
 @media screen and (min-width: 1200px) {
   .hero__title-for-animation {
     -webkit-animation: title-vibration 0.3s both;
@@ -1994,18 +1997,23 @@ textarea {
 }
 
 .hero__title {
-  margin-bottom: 32px;
-  font-family: "Seymour One";
+  font-family: "Seymour One", sans-serif;
   font-size: 26px;
   line-height: 1.2692307692;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
 }
+@media screen and (max-width: 280px) {
+  .hero__title {
+    font-size: 23px;
+    line-height: 1.2692307692;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     margin-bottom: 24px;
-    max-width: 247px;
+    max-width: 248px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2022,13 +2030,22 @@ textarea {
 }
 
 .hero__title-part {
+  display: block;
   font-size: 34px;
   letter-spacing: 0em;
+  line-height: 0.9705882353;
+}
+@media screen and (max-width: 280px) {
+  .hero__title-part {
+    font-size: 23px;
+    line-height: 1.2692307692;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title-part {
     font-size: 38px;
     line-height: 1.2631578947;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -2036,11 +2053,6 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-@media screen and (min-width: 1200px) {
-  .hero__link-list {
-    gap: 34px;
-  }
 }
 
 .hero__products-link {
@@ -2081,6 +2093,7 @@ textarea {
 }
 
 .hero__made-link {
+  padding: 12px 3px;
   cursor: pointer;
   font-weight: 600;
   font-size: 12px;
@@ -2108,11 +2121,12 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .hero__made-link {
-    min-width: 114px;
+    padding: 12px 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__made-link {
+    padding: 12px 22px;
     font-size: 14px;
     line-height: 1.2142857143;
   }
@@ -2121,7 +2135,7 @@ textarea {
 .hero__benefits {
   padding-top: 14px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .hero__benefits {
     display: none;
   }
@@ -2175,7 +2189,7 @@ textarea {
   max-width: 139px;
   margin-left: 184px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .hero__text-box {
     display: none;
   }
@@ -2226,6 +2240,11 @@ textarea {
   position: absolute;
   bottom: 0;
   left: 83px;
+}
+@media screen and (max-width: 319.5px) {
+  .hero__fun-ice {
+    left: calc((100% - 156px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__fun-ice {
