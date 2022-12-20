@@ -2858,7 +2858,7 @@ body {
 .ingredients__circle::before {
   content: "";
   position: absolute;
-  background-image: url(../images/info-modal/ice_132.png);
+  background-image: url(../images/info-modal/ice-cream-132.png);
   top: -7;
   left: 0;
   background-position: center;
@@ -2869,7 +2869,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .ingredients__circle::before {
-    background-image: url(../images/info-modal/ice_164.png);
+    background-image: url(../images/info-modal/ice-cream-132@2x.png);
   }
 }
 
