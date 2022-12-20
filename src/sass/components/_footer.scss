@@ -1,6 +1,10 @@
 .footer {
-  padding-top: 1095px;
+  padding-top: 1155px;
   font-weight: 700;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 1095px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 360px;
