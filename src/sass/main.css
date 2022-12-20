@@ -848,7 +848,7 @@ button:hover {
 }
 
 .section__products {
-  background-image: url(../images/background/mobile/background_mobile_885.png);
+  background-image: url(../images/background/mobile/ice-cream-885.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -856,27 +856,27 @@ button:hover {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section__products {
-    background-image: url(../images/background/mobile/background_mobile_1770.png);
+    background-image: url(../images/background/mobile/ice-cream-885@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .section__products {
-    background-image: url(../images/background/tablet/background_tablet_963.png);
+    background-image: url(../images/background/tablet/ice-cream-963.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section__products {
-    background-image: url(../images/background/tablet/background_tablet_1926.png);
+    background-image: url(../images/background/tablet/ice-cream-963@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .section__products {
-    background-image: url(../images/background/desktop/background_desktop_1300.png);
+    background-image: url(../images/background/desktop/ice-cream-1300.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section__products {
-    background-image: url(../images/background/desktop/background_desktop_2600.png);
+    background-image: url(../images/background/desktop/ice-cream-1300@2x.png);
   }
 }
 
@@ -1021,7 +1021,7 @@ button:hover {
   position: absolute;
   top: -11;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/1/1_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-green-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1030,7 +1030,7 @@ button:hover {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__circle---green::before {
-    background-image: url(../images/products/tablet-mobile/1/1_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-green-200@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1040,13 +1040,13 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .products__circle---green::before {
-    background-image: url(../images/products/desktop/1/1_302.png);
+    background-image: url(../images/products/desktop/circle-green-302.png);
     top: -16px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products__circle---green::before {
-    background-image: url(../images/products/desktop/1/1_604.png);
+    background-image: url(../images/products/desktop/circle-green-302@x.png);
   }
 }
 
@@ -1061,7 +1061,7 @@ button:hover {
   position: absolute;
   top: -11;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/2/2_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-yellow-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1070,7 +1070,7 @@ button:hover {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__circle--yellow::before {
-    background-image: url(../images/products/tablet-mobile/2/2_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-yellow-200@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1080,13 +1080,13 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .products__circle--yellow::before {
-    background-image: url(../images/products/desktop/2/2_302.png);
+    background-image: url(../images/products/desktop/circle-yellow-302.png);
     top: -16px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products__circle--yellow::before {
-    background-image: url(../images/products/desktop/2/2_604.png);
+    background-image: url(../images/products/desktop/circle-yellow-302@2x.png);
   }
 }
 
@@ -1100,7 +1100,7 @@ button:hover {
   position: absolute;
   top: -11;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/3/3_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-coral-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1109,7 +1109,7 @@ button:hover {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products__circle--coral::before {
-    background-image: url(../images/products/tablet-mobile/3/3_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-coral-200@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1119,13 +1119,13 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .products__circle--coral::before {
-    background-image: url(../images/products/desktop/3/3_302.png);
+    background-image: url(../images/products/desktop/circle-coral-302.png);
     top: -16px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products__circle--coral::before {
-    background-image: url(../images/products/desktop/3/3_604.png);
+    background-image: url(../images/products/desktop/circle-coral-302@2x.png);
   }
 }
 
@@ -2858,7 +2858,7 @@ body {
 .ingredients__circle::before {
   content: "";
   position: absolute;
-  background-image: url(../images/info-modal/ice_132.png);
+  background-image: url(../images/info-modal/ice-cream-132.png);
   top: -7;
   left: 0;
   background-position: center;
@@ -2869,7 +2869,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .ingredients__circle::before {
-    background-image: url(../images/info-modal/ice_164.png);
+    background-image: url(../images/info-modal/ice-cream-132@2x.png);
   }
 }
 
@@ -3194,7 +3194,7 @@ body {
   position: absolute;
   top: -7;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/1/1_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-green-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3203,7 +3203,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-modal_circle--green::before {
-    background-image: url(../images/products/tablet-mobile/1/1_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-green-200@2x.png);
   }
 }
 
@@ -3216,7 +3216,7 @@ body {
   position: absolute;
   top: -7;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/3/3_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-coral-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3225,7 +3225,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-modal_circle--coral::before {
-    background-image: url(../images/products/tablet-mobile/3/3_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-coral-200@2x.png);
   }
 }
 
@@ -3238,7 +3238,7 @@ body {
   position: absolute;
   top: -7;
   left: 0;
-  background-image: url(../images/products/tablet-mobile/2/2_200.png);
+  background-image: url(../images/products/tablet-mobile/circle-yellow-200.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3247,7 +3247,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-modal_circle--yellow::before {
-    background-image: url(../images/products/tablet-mobile/2/2_400.png);
+    background-image: url(../images/products/tablet-mobile/circle-yellow-200@2x.png);
   }
 }
 
