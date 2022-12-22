@@ -4,6 +4,10 @@ body {
   background-color: getBgColor(main-green);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
