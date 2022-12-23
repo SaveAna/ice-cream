@@ -659,8 +659,13 @@ button:hover {
 }
 
 .footer {
-  padding-top: 1095px;
+  padding-top: 1155px;
   font-weight: 700;
+}
+@media screen and (min-width: 320px) {
+  .footer {
+    padding-top: 1095px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -1924,6 +1929,57 @@ textarea {
 
 .hero {
   overflow: hidden;
+  position: relative;
+}
+
+.hero__container::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 1px;
+  display: block;
+  width: 152px;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+  display: none;
+  -webkit-animation: hero-line 1.1s both;
+          animation: hero-line 1.1s both;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__container::after {
+    display: block;
+  }
+  @-webkit-keyframes hero-line {
+    0% {
+      transform: scale3d(0, 1, 1);
+    }
+    50% {
+      transform: scale3d(1, 1, 1);
+    }
+    75% {
+      transform: scale3d(0, 1, 1);
+    }
+    100% {
+      transform: scale3d(0, 1, 1);
+    }
+  }
+  @keyframes hero-line {
+    0% {
+      transform: scale3d(0, 1, 1);
+    }
+    50% {
+      transform: scale3d(1, 1, 1);
+    }
+    75% {
+      transform: scale3d(0, 1, 1);
+    }
+    100% {
+      transform: scale3d(0, 1, 1);
+    }
+  }
 }
 
 .hero__container {
@@ -2014,6 +2070,10 @@ textarea {
   .hero__title {
     margin-bottom: 24px;
     max-width: 248px;
+    -webkit-animation: title-animation-tablet 2s cubic-bezier(0, 1, 1, 1) both;
+            animation: title-animation-tablet 2s cubic-bezier(0, 1, 1, 1) both;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2249,6 +2309,10 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero__fun-ice {
     left: 408px;
+    -webkit-animation: ice-cream-move-tablet 2s both cubic-bezier(0, 0.7, 0.4, 1);
+            animation: ice-cream-move-tablet 2s both cubic-bezier(0, 0.7, 0.4, 1);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2270,6 +2334,10 @@ textarea {
     display: block;
     left: 32px;
     bottom: 12px;
+    -webkit-animation: bounce-in-top 1.5s both cubic-bezier(0, 0.5, 1, 1);
+            animation: bounce-in-top 1.5s both cubic-bezier(0, 0.5, 1, 1);
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2467,6 +2535,138 @@ textarea {
   }
   100% {
     transform: translateY(0) translateX(0) scale(1) scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes ice-cream-move-tablet {
+  0% {
+    transform: rotate(-25deg) translateY(5px) translateX(-85px);
+  }
+  50% {
+    transform: rotate(15deg) translateY(30px) translateX(20) scale3d(1, 1, 1);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0) translateX(0) scale3d(1, 1, 1);
+  }
+}
+@keyframes ice-cream-move-tablet {
+  0% {
+    transform: rotate(-25deg) translateY(5px) translateX(-85px);
+  }
+  50% {
+    transform: rotate(15deg) translateY(30px) translateX(20) scale3d(1, 1, 1);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0) translateX(0) scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes title-animation-tablet {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(0px) translateX(210px) scale3d(0.7, 1.1, 1);
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale3d(1, 1, 1);
+  }
+}
+@keyframes title-animation-tablet {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(0px) translateX(210px) scale3d(0.7, 1.1, 1);
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes bounce-in-top {
+  0% {
+    transform: translateY(-900px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-900px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 .burger-toggle {
