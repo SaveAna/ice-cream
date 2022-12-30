@@ -13,7 +13,7 @@
   overflow-y: scroll;
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 996px;
+    height: 95%;
     padding: 32px 40px;
   }
 }
@@ -32,7 +32,7 @@
 .ingredients__circle {
   position: relative;
   width: 132px;
-  height: 132px;
+  min-height: 132px;
   border-radius: 50%;
   background: getBgColor(green-circle);
   box-shadow: getShadow(prod-green);
@@ -47,7 +47,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 132px;
-    height: 132px;
+    min-height: 132px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
